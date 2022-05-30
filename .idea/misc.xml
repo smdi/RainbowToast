@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/drawable/ellipse_1.xml" value="0.2085" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout-land/activity_main.xml" value="0.23236331569664903" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/rainbow_toast_layout.xml" value="0.2520231213872832" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/xml/style.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

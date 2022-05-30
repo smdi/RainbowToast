@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/card_width"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginBottom="@dimen/card_margin_bottom"
+        app:cardBackgroundColor="@color/card_backgroud_lite"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:strokeColor="@color/card_stroke_lite"
+        app:strokeWidth="@dimen/card_stroke_width">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/message_layout_inside_cardview_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/title_message_margin"
+                android:layout_marginRight="@dimen/title_message_margin"
+                android:fontFamily="@font/allertastencil_regular"
+                android:maxLength="@dimen/title_message_maxlength"
+                android:maxLines="@dimen/title_message_maxlines"
+                android:text="@string/success_lite"
+                android:textAlignment="center"
+                android:textAppearance="@style/success" />
+
+            <TextView
+                android:id="@+id/connection_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/success"
+                android:layout_marginLeft="@dimen/message_margin"
+                android:layout_marginRight="@dimen/message_margin"
+                android:fontFamily="@font/abeezee_regular"
+                android:maxLength="@dimen/message_maxlength"
+                android:maxLines="@dimen/message_maxlines"
+                android:text="@string/success_message_lite"
+                android:textAlignment="center"
+                android:textAppearance="@style/connection_" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
