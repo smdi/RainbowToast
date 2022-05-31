@@ -17,7 +17,7 @@
     <!--Card view dimensions    -->
     <dimen name="card_width">400dp</dimen>
     <dimen name="card_height">400dp</dimen>
-    <dimen name="card_margin_bottom">-345dp</dimen>
+    <dimen name="card_margin_bottom">-335dp</dimen>
     <dimen name="card_corner_radius">200dp</dimen>
     <dimen name="card_stroke_width">6dp</dimen>
 </resources>
