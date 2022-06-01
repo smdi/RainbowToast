@@ -7,6 +7,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="card_stroke_lite">#70C778</color>
-    <color name="card_backgroud_lite">#CAEDCE</color>
+
+    <!--    Success-->
+    <color name="card_stroke_success_lite">#70C778</color>
+    <color name="card_backgroud_success_lite">#D9CAEDCE</color>
+    <!--Error-->
+    <color name="card_stroke_error_lite">#C77070</color>
+    <color name="card_backgroud_error_lite">#D9EDCACA</color>
+    <!--Warning-->
+    <color name="card_stroke_warning_lite">#C5C770</color>
+    <color name="card_backgroud_warning_lite">#D9E8EDCA</color>
+    <!--Info-->
+    <color name="card_stroke_info_lite">#7770C7</color>
+    <color name="card_backgroud_info_lite">#D9CBCAED</color>
+    <!--Custom-->
+    <color name="card_stroke_custom_lite">#C770BE</color>
+    <color name="card_backgroud_custom_lite">#D9ECCAED</color>
+
 </resources>
