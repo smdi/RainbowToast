@@ -36,14 +36,19 @@ public class RainbowToast {
         View view = LayoutInflater.from(activity)
                 .inflate(R.layout.rainbow_toast_layout, null);
         Timer timer = new Timer();
+
         MaterialCardView materialCardView = view.findViewById(R.id.rainbowCard);
+        MaterialCardView materialCardView2 = view.findViewById(R.id.rainbowCard2);
+        MaterialCardView materialCardView3 = view.findViewById(R.id.rainbowCard3);
+        MaterialCardView materialCardView4 = view.findViewById(R.id.rainbowCard4);
+        MaterialCardView materialCardView5 = view.findViewById(R.id.rainbowCard5);
         TextView title = view.findViewById(R.id.rainbowTitle);
         TextView message = view.findViewById(R.id.rainbowMessage);
         Toast toast = new Toast(activity);
 
 
         setColorByType(view, activity, type, mode, materialCardView, title);
-        callColorChanger(view, activity, materialCardView, timer, type, mode);
+        callColorChanger(view, activity, timer, type, mode, materialCardView, materialCardView2, materialCardView3, materialCardView4, materialCardView5);
         title.setText(titleData);
         message.setText(messageData);
         toast.setDuration(duration);
@@ -57,7 +62,6 @@ public class RainbowToast {
             title.setTextAppearance(textStyle);
         }
         materialCardView.setCardBackgroundColor(activity.getResources().getColor(colorBackground));
-        materialCardView.setStrokeColor(activity.getResources().getColor(colorStroke));
     }
 
     private static void setColorByType(View view, Activity activity, String type, String mode, MaterialCardView materialCardView, TextView title) {
@@ -87,71 +91,48 @@ public class RainbowToast {
 
     }
 
-    private static void setColorToCardStrokeLite(MaterialCardView materialCardView, Activity activity, String type, String mode){
+    private static void setColorToCardStrokeLite(Activity activity, String type, String mode, MaterialCardView... materialCardView){
 
         if(mode.equals(DARK)){
 
         }else{
-            switch (type) {
-                case SUCCESS:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_success_lite_stoke_lite));
-                    break;
-                case ERROR:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_error_lite_stoke_lite));
-                    break;
-                case WARNING:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_warning_lite_stoke_lite));
-                    break;
-                case INFO:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_info_lite_stoke_lite));
-                    break;
-                default:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_custom_lite_stoke_lite));
-                    break;
-            }
+            materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_lite));
+            materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_lite));
+            materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_lite));
+            materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_lite));
+            materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_lite));
         }
     }
-    private static void setColorToCardStrokeDark(MaterialCardView materialCardView, Activity activity, String type, String mode){
+    private static void setColorToCardStrokeDark(Activity activity, String type, String mode, MaterialCardView... materialCardView){
 
         if(mode.equals(DARK)){
 
         }else{
-            switch (type) {
-                case SUCCESS:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_success_lite_stoke_dark));
-                    break;
-                case ERROR:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_error_lite_stoke_dark));
-                    break;
-                case WARNING:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_warning_lite_stoke_dark));
-                    break;
-                case INFO:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_info_lite_stoke_dark));
-                    break;
-                default:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_custom_lite_stoke_dark));
-                    break;
-            }
+            materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_dark));
+            materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_dark));
+            materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_dark));
+            materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_dark));
+            materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_dark));
         }
     }
 
-    private static void callColorChanger(View view, Activity activity, MaterialCardView materialCardView, Timer timer, String type, String mode){
+    private static void callColorChanger(View view, Activity activity,  Timer timer, String type, String mode, MaterialCardView... materialCardView){
 
         timer.scheduleAtFixedRate(new TimerTask(){
             @Override
             public void run(){
                 if(colorChooser == 0){
                     colorChooser = 1;
-                    setColorToCardStrokeLite(materialCardView,  activity,  type, mode);
+                    setColorToCardStrokeLite(activity,  type, mode, materialCardView);
                 }
                 else {
                     colorChooser = 0;
-                    setColorToCardStrokeDark(materialCardView,  activity,  type, mode);
+                    setColorToCardStrokeDark(activity,  type, mode, materialCardView);
                 }
                 cancelTimer += RUN_INTERVAL;
                 if(cancelTimer >= STOP_AFTER){
                     timer.cancel();
+                    colorChooser = 0;
                     cancelTimer = DELAY_TIMER;
                 }
             }
