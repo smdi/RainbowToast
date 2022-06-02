@@ -9,18 +9,28 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--    Success-->
+    <color name="card_stroke_success_lite_stoke_lite">#8FF599</color>
+    <color name="card_stroke_success_lite_stoke_dark">#73DC7E</color>
     <color name="card_stroke_success_lite">#70C778</color>
     <color name="card_backgroud_success_lite">#D9CAEDCE</color>
     <!--Error-->
+    <color name="card_stroke_error_lite_stoke_lite">#FF9C9C</color>
+    <color name="card_stroke_error_lite_stoke_dark">#F86464</color>
     <color name="card_stroke_error_lite">#C77070</color>
     <color name="card_backgroud_error_lite">#D9EDCACA</color>
     <!--Warning-->
+    <color name="card_stroke_warning_lite_stoke_lite">#FDFF8E</color>
+    <color name="card_stroke_warning_lite_stoke_dark">#ECEE73</color>
     <color name="card_stroke_warning_lite">#C5C770</color>
     <color name="card_backgroud_warning_lite">#D9E8EDCA</color>
     <!--Info-->
+    <color name="card_stroke_info_lite_stoke_lite">#9D95FF</color>
+    <color name="card_stroke_info_lite_stoke_dark">#6A5DFB</color>
     <color name="card_stroke_info_lite">#7770C7</color>
     <color name="card_backgroud_info_lite">#D9CBCAED</color>
     <!--Custom-->
+    <color name="card_stroke_custom_lite_stoke_lite">#FAAFF2</color>
+    <color name="card_stroke_custom_lite_stoke_dark">#FE5AEE</color>
     <color name="card_stroke_custom_lite">#C770BE</color>
     <color name="card_backgroud_custom_lite">#D9ECCAED</color>
 
