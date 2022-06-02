@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         RainbowToast.showToast(this, "Delete", "Connection terminated successfully!",
-                RainbowToast.LENGTH_LONG, RainbowToast.ERROR, RainbowToast.LITE );
+                RainbowToast.LENGTH_LONG, RainbowToast.SUCCESS, RainbowToast.LITE );
     }
 }

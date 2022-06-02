@@ -1,6 +1,7 @@
 package com.rainbowtoast;
 
 import android.app.Activity;
+import android.os.Build;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,7 +42,7 @@ public class RainbowToast {
         Toast toast = new Toast(activity);
 
 
-        setColorByType(view, activity, type, mode, materialCardView);
+        setColorByType(view, activity, type, mode, materialCardView, title);
         callColorChanger(view, activity, materialCardView, timer, type, mode);
         title.setText(titleData);
         message.setText(messageData);
@@ -51,12 +52,15 @@ public class RainbowToast {
         toast.show();
     }
 
-    private static void setColorToCard(MaterialCardView materialCardView, Activity activity,int colorBackground, int colorStroke){
+    private static void setColorToCard(MaterialCardView materialCardView, Activity activity, int colorBackground, int colorStroke, TextView title, int textStyle){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            title.setTextAppearance(textStyle);
+        }
         materialCardView.setCardBackgroundColor(activity.getResources().getColor(colorBackground));
         materialCardView.setStrokeColor(activity.getResources().getColor(colorStroke));
     }
 
-    private static void setColorByType(View view, Activity activity, String type, String mode, MaterialCardView materialCardView) {
+    private static void setColorByType(View view, Activity activity, String type, String mode, MaterialCardView materialCardView, TextView title) {
 
 
         if(mode.equals(DARK)){
@@ -64,19 +68,19 @@ public class RainbowToast {
         }else{
             switch (type) {
                 case SUCCESS:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_success_lite, R.color.card_stroke_success_lite);
+                    setColorToCard(materialCardView, activity, R.color.card_backgroud_success_lite, R.color.card_stroke_success_lite, title, R.style.success_lite);
                     break;
                 case ERROR:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_error_lite, R.color.card_stroke_error_lite);
+                    setColorToCard(materialCardView, activity, R.color.card_backgroud_error_lite, R.color.card_stroke_error_lite, title, R.style.error_lite);
                     break;
                 case WARNING:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_warning_lite, R.color.card_stroke_warning_lite);
+                    setColorToCard(materialCardView, activity, R.color.card_backgroud_warning_lite, R.color.card_stroke_warning_lite, title, R.style.warning_lite);
                     break;
                 case INFO:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_info_lite, R.color.card_stroke_info_lite);
+                    setColorToCard(materialCardView, activity, R.color.card_backgroud_info_lite, R.color.card_stroke_info_lite, title, R.style.info_lite);
                     break;
                 default:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_custom_lite, R.color.card_stroke_custom_lite);
+                    setColorToCard(materialCardView, activity, R.color.card_backgroud_custom_lite, R.color.card_stroke_custom_lite, title, R.style.custom_lite);
                     break;
             }
         }

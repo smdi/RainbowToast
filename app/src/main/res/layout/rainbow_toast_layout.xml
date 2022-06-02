@@ -34,7 +34,7 @@
                 android:maxLines="1"
                 android:text="@string/success_lite"
                 android:textAlignment="center"
-                android:textAppearance="@style/success"/>
+                android:textAppearance="@style/default_lite"/>
 
             <TextView
                 android:id="@+id/rainbowMessage"
@@ -48,7 +48,7 @@
                 android:maxLines="2"
                 android:text="@string/success_message_lite"
                 android:textAlignment="center"
-                android:textAppearance="@style/success_message" />
+                android:textAppearance="@style/lite_message" />
 
         </RelativeLayout>
 
