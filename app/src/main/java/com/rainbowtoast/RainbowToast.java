@@ -152,6 +152,7 @@ public class RainbowToast {
                 cancelTimer += RUN_INTERVAL;
                 if(cancelTimer >= STOP_AFTER){
                     timer.cancel();
+                    colorChooser = 0;
                     cancelTimer = DELAY_TIMER;
                 }
             }
