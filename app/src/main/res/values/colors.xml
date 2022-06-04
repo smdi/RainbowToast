@@ -24,6 +24,10 @@
     <color name="card_stroke_custom_lite">#C770BE</color>
     <color name="card_backgroud_custom_lite">#D9ECCAED</color>
 
+    <!--text colors    -->
+    <color name="custom_title_text_color_lite">#A64C9D</color>
+    <color name="para_text_color_lite">#666666</color>
+
     <!--rainbow lite stroke lite    -->
     <color name="rainbow_card_lite_stroke_lite">#FAAFF2</color>
     <color name="rainbow_card2_lite_stroke_lite">#9D95FF</color>
