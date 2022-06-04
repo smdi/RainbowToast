@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/rainbowToast"
     android:layout_width="wrap_content"
@@ -29,12 +30,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/title_message_margin"
                 android:layout_marginRight="@dimen/title_message_margin"
-                android:fontFamily="@font/allertastencil_regular"
-                android:maxLength="25"
+                android:fontFamily="@font/abeezee_regular"
+                android:maxLength="30"
                 android:maxLines="1"
                 android:text="@string/success_lite"
                 android:textAlignment="center"
-                android:textAppearance="@style/default_lite"/>
+                android:textColor="@color/default_title_text_color_lite"
+                android:textSize="@dimen/title_message_size" />
 
             <TextView
                 android:id="@+id/rainbowMessage"
@@ -44,11 +46,12 @@
                 android:layout_marginLeft="@dimen/message_margin"
                 android:layout_marginRight="@dimen/message_margin"
                 android:fontFamily="@font/abeezee_regular"
-                android:maxLength="100"
+                android:maxLength="200"
                 android:maxLines="2"
                 android:text="@string/success_message_lite"
                 android:textAlignment="center"
-                android:textAppearance="@style/lite_message" />
+                android:textColor="@color/para_text_color_lite"
+                android:textSize="@dimen/para_message_size" />
 
         </RelativeLayout>
 
