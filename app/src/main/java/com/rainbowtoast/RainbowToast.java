@@ -19,13 +19,15 @@ public class RainbowToast {
     private static final int DELAY_TIMER = 0;
     private static int cancelTimer = DELAY_TIMER;
     private static final int RUN_INTERVAL = 1000;
-    private static final int STOP_AFTER = 4000;
+    private static int stopAfter = 0;
+    private static final int STOP_AFTER2K = 2000;
+    private static final int STOP_AFTER4K = 4000;
     public static final String LITE = "LITE";
     public static final String DARK = "DARK";
     public static final int LENGTH_SHORT = 2;
     public static final int LENGTH_LONG = 4;
 
-    public static void showToast(Activity activity, String titleData, String messageData, int duration, String mode) {
+    public static void showToast(Activity activity, String titleData, String messageData, int duration) {
 
         View view = LayoutInflater.from(activity)
                 .inflate(R.layout.rainbow_toast_layout, null);
@@ -39,7 +41,14 @@ public class RainbowToast {
         TextView message = view.findViewById(R.id.rainbowMessage);
         Toast toast = new Toast(activity);
 
-        callColorChanger(activity, timer, mode, materialCardView, materialCardView2, materialCardView3, materialCardView4, materialCardView5);
+        if(duration == LENGTH_LONG){
+            stopAfter = STOP_AFTER4K;
+        }else {
+            stopAfter = STOP_AFTER2K;
+        }
+
+        setColorToText(activity, title, message, materialCardView);
+        callColorChanger(activity, timer, materialCardView, materialCardView2, materialCardView3, materialCardView4, materialCardView5);
         title.setText(titleData);
         message.setText(messageData);
         toast.setDuration(duration);
@@ -47,46 +56,49 @@ public class RainbowToast {
         toast.setView(view);
         toast.show();
     }
-    private static void setColorToCardStrokeLite(Activity activity, String mode, MaterialCardView... materialCardView){
 
-        if(mode.equals(DARK)){
+    private static void setColorToText(Activity activity, TextView title, TextView message, MaterialCardView materialCardView) {
 
-        }else{
-            materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_lite));
-            materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_lite));
-            materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_lite));
-            materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_lite));
-            materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_lite));
-        }
-    }
-    private static void setColorToCardStrokeDark(Activity activity, String mode, MaterialCardView... materialCardView){
+        title.setTextColor(activity.getResources().getColor(R.color.custom_title_text_color_lite));
+        message.setTextColor(activity.getResources().getColor(R.color.para_text_color_lite));
+        materialCardView.setCardBackgroundColor(activity.getResources().getColor(R.color.card_backgroud_custom_lite));
 
-        if(mode.equals(DARK)){
-
-        }else{
-            materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_dark));
-            materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_dark));
-            materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_dark));
-            materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_dark));
-            materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_dark));
-        }
     }
 
-    private static void callColorChanger(Activity activity,  Timer timer, String mode, MaterialCardView... materialCardView){
+    private static void setColorToCardStrokeLite(Activity activity, MaterialCardView... materialCardView){
+
+        materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_lite));
+        materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_lite));
+        materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_lite));
+        materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_lite));
+        materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_lite));
+
+    }
+    private static void setColorToCardStrokeDark(Activity activity, MaterialCardView... materialCardView){
+
+        materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_dark));
+        materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_dark));
+        materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_dark));
+        materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_dark));
+        materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_dark));
+
+    }
+
+    private static void callColorChanger(Activity activity,  Timer timer, MaterialCardView... materialCardView){
 
         timer.scheduleAtFixedRate(new TimerTask(){
             @Override
             public void run(){
                 if(colorChooser == 0){
                     colorChooser = 1;
-                    setColorToCardStrokeLite(activity, mode, materialCardView);
+                    setColorToCardStrokeLite(activity, materialCardView);
                 }
                 else {
                     colorChooser = 0;
-                    setColorToCardStrokeDark(activity, mode, materialCardView);
+                    setColorToCardStrokeDark(activity, materialCardView);
                 }
                 cancelTimer += RUN_INTERVAL;
-                if(cancelTimer >= STOP_AFTER){
+                if(cancelTimer >= stopAfter){
                     timer.cancel();
                     colorChooser = 0;
                     cancelTimer = DELAY_TIMER;

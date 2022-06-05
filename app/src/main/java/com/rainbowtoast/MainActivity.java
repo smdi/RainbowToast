@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         RainbowToast.showToast(this, "Treat", "You have won chocolates and candy!",
-                RainbowToast.LENGTH_LONG, RainbowToast.LITE );
+                RainbowToast.LENGTH_LONG );
     }
 }

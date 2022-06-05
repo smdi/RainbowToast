@@ -8,20 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!--Success-->
-    <color name="card_stroke_success_lite">#70C778</color>
-    <color name="card_backgroud_success_lite">#D9CAEDCE</color>
-    <!--Error-->
-    <color name="card_stroke_error_lite">#C77070</color>
-    <color name="card_backgroud_error_lite">#D9EDCACA</color>
-    <!--Warning-->
-    <color name="card_stroke_warning_lite">#C5C770</color>
-    <color name="card_backgroud_warning_lite">#D9E8EDCA</color>
-    <!--Info-->
-    <color name="card_stroke_info_lite">#7770C7</color>
-    <color name="card_backgroud_info_lite">#D9CBCAED</color>
-    <!--Custom-->
-    <color name="card_stroke_custom_lite">#C770BE</color>
+    <!--lite    -->
     <color name="card_backgroud_custom_lite">#D9ECCAED</color>
 
     <!--text colors    -->
@@ -35,7 +22,7 @@
     <color name="rainbow_card4_lite_stroke_lite">#FDFF8E</color>
     <color name="rainbow_card5_lite_stroke_lite">#FF9C9C</color>
     <!--rainbow lite stroke dark    -->
-    <color name="rainbow_card_lite_stroke_dark">#FA73ED</color>
+    <color name="rainbow_card_lite_stroke_dark">#FD83F2</color>
     <color name="rainbow_card2_lite_stroke_dark">#756BF6</color>
     <color name="rainbow_card3_lite_stroke_dark">#7EF388</color>
     <color name="rainbow_card4_lite_stroke_dark">#E6E87D</color>
