@@ -35,9 +35,9 @@
     <color name="rainbow_card4_lite_stroke_lite">#FDFF8E</color>
     <color name="rainbow_card5_lite_stroke_lite">#FF9C9C</color>
     <!--rainbow lite stroke dark    -->
-    <color name="rainbow_card_lite_stroke_dark">#FE5AEE</color>
-    <color name="rainbow_card2_lite_stroke_dark">#5546FF</color>
-    <color name="rainbow_card3_lite_stroke_dark">#70C778</color>
-    <color name="rainbow_card4_lite_stroke_dark">#FBFF00</color>
-    <color name="rainbow_card5_lite_stroke_dark">#F86464</color>
+    <color name="rainbow_card_lite_stroke_dark">#FA73ED</color>
+    <color name="rainbow_card2_lite_stroke_dark">#756BF6</color>
+    <color name="rainbow_card3_lite_stroke_dark">#7EF388</color>
+    <color name="rainbow_card4_lite_stroke_dark">#E6E87D</color>
+    <color name="rainbow_card5_lite_stroke_dark">#EC7D7D</color>
 </resources>
