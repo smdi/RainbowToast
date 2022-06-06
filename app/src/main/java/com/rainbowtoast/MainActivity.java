@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        RainbowToast.showToast(this, "Delete", "Connection terminated successfully!",
-                RainbowToast.LENGTH_SHORT, RainbowToast.WARNING, RainbowToast.DARK );
+        HalloweenToast.showToast(this, "Success", "Connection established successfully!",
+                HalloweenToast.LENGTH_SHORT, HalloweenToast.SUCCESS, HalloweenToast.LITE );
     }
 }
