@@ -9,62 +9,22 @@
     <color name="white">#FFFFFFFF</color>
 
     <!--Success-->
-    <color name="card_stroke_success_lite_stoke_lite">#8FF599</color>
-    <color name="card_stroke_success_lite_stoke_dark">#5ABE65</color>
+    <color name="ht_success_title_text_color_lite">#006B0B</color>
 
-    <color name="card_stroke_success_dark_stoke_lite">#33035E0C</color>
-    <color name="card_stroke_success_dark">#D9035E0C</color>
-    <color name="card_backgroud_success_dark">#B33B6A40</color>
-
-    <color name="card_stroke_success_lite">#70C778</color>
-    <color name="card_backgroud_success_lite">#D9CAEDCE</color>
-    <color name="success_title_text_color_lite">#4F9055</color>
     <!--Error-->
-    <color name="card_stroke_error_lite_stoke_lite">#FF9C9C</color>
-    <color name="card_stroke_error_lite_stoke_dark">#F86464</color>
+    <color name="ht_error_title_text_color_lite">#7E0000</color>
 
-    <color name="card_stroke_error_dark_stoke_lite">#335E0303</color>
-    <color name="card_stroke_error_dark">#D95E0303</color>
-    <color name="card_backgroud_error_dark">#B36A3B3B</color>
-
-    <color name="card_stroke_error_lite">#C77070</color>
-    <color name="card_backgroud_error_lite">#D9EDCACA</color>
-    <color name="error_title_text_color_lite">#C77070</color>
     <!--Warning-->
-    <color name="card_stroke_warning_lite_stoke_lite">#D3D56C</color>
-    <color name="card_stroke_warning_lite_stoke_dark">#B4B64A</color>
+    <color name="ht_warning_title_text_color_lite">#5A5B00</color>
 
-    <color name="card_stroke_warning_dark_stoke_lite">#335C5E03</color>
-    <color name="card_stroke_warning_dark">#D95C5E03</color>
-    <color name="card_backgroud_warning_dark">#B3696A3B</color>
-
-    <color name="card_stroke_warning_lite">#C5C770</color>
-    <color name="card_backgroud_warning_lite">#D9E8EDCA</color>
-    <color name="warning_title_text_color_lite">#8E8F30</color>
     <!--Info-->
-    <color name="card_stroke_info_lite_stoke_lite">#9D95FF</color>
-    <color name="card_stroke_info_lite_stoke_dark">#6A5DFB</color>
+    <color name="ht_info_title_text_color_lite">#090166</color>
 
-    <color name="card_stroke_info_dark_stoke_lite">#3303075E</color>
-    <color name="card_stroke_info_dark">#D903075E</color>
-    <color name="card_backgroud_info_dark">#B33B3D6A</color>
-
-    <color name="card_stroke_info_lite">#7770C7</color>
-    <color name="card_backgroud_info_lite">#D9CBCAED</color>
-    <color name="info_title_text_color_lite">#7770C7</color>
     <!--Custom-->
-    <color name="card_stroke_custom_lite_stoke_lite">#FAAFF2</color>
-    <color name="card_stroke_custom_lite_stoke_dark">#FE5AEE</color>
+    <color name="ht_custom_title_text_color_lite">#5C0053</color>
 
-    <color name="card_stroke_custom_dark_stoke_lite">#336E1176</color>
-    <color name="card_stroke_custom_dark">#D95C035E</color>
-    <color name="card_backgroud_custom_dark">#B3693B6A</color>
-
-    <color name="card_stroke_custom_lite">#33C770BE</color>
-    <color name="card_backgroud_custom_lite">#D9ECCAED</color>
-    <color name="custom_title_text_color_lite">#A64C9D</color>
     <!--text color    -->
-    <color name="dark_title_para_text_color">#FFFFFF</color>
-    <color name="para_text_color_lite">#666666</color>
-    <color name="default_title_text_color_lite">#666666</color>
+    <color name="ht_title_para_text_color_dark">#FFFFFF</color>
+    <color name="ht_para_text_color_lite">#666666</color>
+    <color name="ht_default_title_text_color_lite">#666666</color>
 </resources>

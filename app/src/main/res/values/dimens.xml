@@ -2,23 +2,22 @@
 <resources>
 
     <!--title message    -->
-    <dimen name="title_message_margin">30dp</dimen>
-    <dimen name="title_message_size">14sp</dimen>
-    <dimen name="title_message_maxlines">1</dimen>
-    <dimen name="title_message_maxlength">25dp</dimen>
+    <dimen name="ht_title_message_margin_30">30dp</dimen>
+    <dimen name="ht_title_message_size_14">14sp</dimen>
+    <dimen name="ht_title_message_padding_left_10">10dp</dimen>
+    <dimen name="ht_title_message_padding_right_10">35dp</dimen>
 
     <!--para message    -->
-    <dimen name="message_margin">30dp</dimen>
-    <dimen name="para_message_size">10sp</dimen>
-    <dimen name="message_maxlines">1</dimen>
-    <dimen name="message_maxlength">50dp</dimen>
+    <dimen name="ht_para_message_margin_30">30dp</dimen>
+    <dimen name="ht_para_message_size_10">10sp</dimen>
+    <dimen name="ht_para_message_padding_right_20">20dp</dimen>
 
     <!--message layout    -->
-    <dimen name="message_layout_inside_cardview_margin">40dp</dimen>
+    <dimen name="ht_message_layout_margin_left_55">55dp</dimen>
+    <dimen name="ht_message_layout_margin_top_50">50dp</dimen>
 
     <!--Card view dimensions    -->
-    <dimen name="card_width">285dp</dimen>
-    <dimen name="card_height">135dp</dimen>
-    <dimen name="card_corner_radius">800dp</dimen>
-    <dimen name="card_stroke_width">4dp</dimen>
+    <dimen name="ht_card_width_300">300dp</dimen>
+    <dimen name="ht_card_height_160">160dp</dimen>
+
 </resources>

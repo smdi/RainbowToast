@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--title message    -->
+    <integer name="ht_title_message_line_1">1</integer>
+    <!--para message    -->
+    <integer name="ht_para_message_line_1">1</integer>
+</resources>

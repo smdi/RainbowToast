@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/rainbowToast"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard"
-        android:layout_width="@dimen/card_width"
-        android:layout_height="@dimen/card_height"
+        android:layout_width="@dimen/ht_card_width_300"
+        android:layout_height="@dimen/ht_card_height_160"
         android:layout_centerHorizontal="true"
         >
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="@dimen/message_layout_inside_cardview_margin"
+            android:layout_marginStart="@dimen/ht_message_layout_margin_left_55"
+            android:layout_marginTop="@dimen/ht_message_layout_margin_top_50"
             android:orientation="vertical">
 
             <TextView
@@ -24,12 +25,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/eater_regular"
-                android:maxLines="1"
+                android:maxLines="@integer/ht_title_message_line_1"
                 android:text="@string/success_lite"
-                android:paddingLeft="10dp"
-                android:layout_marginRight="35dp"
-                android:textColor="#006B0B"
-                android:textSize="@dimen/title_message_size" />
+                android:paddingStart="@dimen/ht_title_message_padding_left_10"
+                android:layout_marginEnd="@dimen/ht_message_layout_margin_left_55"
+                android:textColor="@color/ht_default_title_text_color_lite"
+                android:textSize="@dimen/ht_title_message_size_14"
+                tools:ignore="RtlSymmetry" />
 
             <TextView
                 android:id="@+id/rainbowMessage"
@@ -37,11 +39,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rainbowTitle"
                 android:fontFamily="@font/fontdinerswanky_regular"
-                android:layout_marginRight="20dp"
-                android:maxLines="1"
+                android:layout_marginEnd="@dimen/ht_para_message_padding_right_20"
+                android:maxLines="@integer/ht_para_message_line_1"
                 android:text="@string/success_message_lite"
-                android:textColor="@color/para_text_color_lite"
-                android:textSize="@dimen/para_message_size" />
+                android:textColor="@color/ht_para_text_color_lite"
+                android:textSize="@dimen/ht_para_message_size_10" />
 
         </RelativeLayout>
 

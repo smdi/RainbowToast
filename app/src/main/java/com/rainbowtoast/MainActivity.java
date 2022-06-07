@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         HalloweenToast.showToast(this, "Success", "Connection established successfully!",
-                HalloweenToast.LENGTH_SHORT, HalloweenToast.SUCCESS, HalloweenToast.LITE );
+                HalloweenToast.LENGTH_SHORT, HalloweenToast.CUSTOM, HalloweenToast.LITE );
     }
 }
