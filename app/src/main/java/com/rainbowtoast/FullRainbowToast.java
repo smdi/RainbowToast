@@ -12,8 +12,7 @@ import com.google.android.material.card.MaterialCardView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
-public class RainbowToast {
+public class FullRainbowToast {
 
     private static int colorChooser = 0;
     private static final int DELAY_TIMER = 0;
@@ -30,7 +29,7 @@ public class RainbowToast {
     public static void showToast(Activity activity, String titleData, String messageData, int duration) {
 
         View view = LayoutInflater.from(activity)
-                .inflate(R.layout.rainbow_toast_layout, null);
+                .inflate(R.layout.full_rainbow_toast_layout, null);
         Timer timer = new Timer();
         MaterialCardView materialCardView = view.findViewById(R.id.rainbowCard);
         MaterialCardView materialCardView2 = view.findViewById(R.id.rainbowCard2);
@@ -84,7 +83,7 @@ public class RainbowToast {
 
     }
 
-    private static void callColorChanger(Activity activity,  Timer timer, MaterialCardView... materialCardView){
+    private static void callColorChanger(Activity activity, Timer timer, MaterialCardView... materialCardView){
 
         timer.scheduleAtFixedRate(new TimerTask(){
             @Override
