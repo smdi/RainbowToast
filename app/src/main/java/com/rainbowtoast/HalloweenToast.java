@@ -34,7 +34,7 @@ public class HalloweenToast {
         message.setText(messageData);
 
         setBackgroundByType(type, mode, materialCardView);
-        setColorByType(view, activity, type, mode, materialCardView, title, message);
+        setColorByType(activity, type, mode, title, message);
 
         Toast toast = new Toast(activity);
         toast.setDuration(duration);
@@ -86,8 +86,7 @@ public class HalloweenToast {
         title.setTextColor(activity.getResources().getColor(titleColor));
     }
 
-    private static void setColorByType(View view, Activity activity, String type, String mode, MaterialCardView materialCardView, TextView title, TextView message) {
-
+    private static void setColorByType(Activity activity, String type, String mode, TextView title, TextView message) {
 
         if(mode.equals(DARK)){
             title.setTextColor(activity.getResources().getColor(R.color.ht_title_para_text_color_dark));
@@ -113,6 +112,5 @@ public class HalloweenToast {
                     break;
             }
         }
-
     }
 }
