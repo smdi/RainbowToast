@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        FullRainbowToast.showToast(this, "Treat", "You have won chocolates and candy!",
+        FullRainbowToast.showToast(this, "Treat", "You have won chocolates and candies!",
                 FullRainbowToast.LENGTH_LONG );
     }
 }
