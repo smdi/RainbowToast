@@ -48,8 +48,8 @@ public class RainbowToast {
             stopAfter = STOP_AFTER2K;
         }
 
-        setColorByType(view, activity, type, mode, materialCardView, title, message);
-        callColorChanger(view, activity, materialCardView, timer, type, mode);
+        setColorByType(activity, type, mode, materialCardView, title, message);
+        callColorChanger(activity, materialCardView, timer, type, mode);
         title.setText(titleData);
         message.setText(messageData);
         toast.setDuration(duration);
@@ -64,45 +64,45 @@ public class RainbowToast {
         materialCardView.setStrokeColor(activity.getResources().getColor(colorStroke));
     }
 
-    private static void setColorByType(View view, Activity activity, String type, String mode, MaterialCardView materialCardView, TextView title, TextView message) {
+    private static void setColorByType(Activity activity, String type, String mode, MaterialCardView materialCardView, TextView title, TextView message) {
 
 
         if(mode.equals(DARK)){
-            message.setTextColor(activity.getResources().getColor(R.color.dark_title_para_text_color));
+            message.setTextColor(activity.getResources().getColor(R.color.sr_dark_title_para_text_color));
             switch (type) {
                 case SUCCESS:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_success_dark, R.color.card_stroke_success_dark, title, R.color.dark_title_para_text_color);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_success_dark, R.color.sr_card_stroke_success_dark, title, R.color.sr_dark_title_para_text_color);
                     break;
                 case ERROR:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_error_dark, R.color.card_stroke_error_dark, title, R.color.dark_title_para_text_color);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_error_dark, R.color.sr_card_stroke_error_dark, title, R.color.sr_dark_title_para_text_color);
                     break;
                 case WARNING:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_warning_dark, R.color.card_stroke_warning_dark, title, R.color.dark_title_para_text_color);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_warning_dark, R.color.sr_card_stroke_warning_dark, title, R.color.sr_dark_title_para_text_color);
                     break;
                 case INFO:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_info_dark, R.color.card_stroke_info_dark, title, R.color.dark_title_para_text_color);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_info_dark, R.color.sr_card_stroke_info_dark, title, R.color.sr_dark_title_para_text_color);
                     break;
                 default:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_custom_dark, R.color.card_stroke_custom_dark, title, R.color.dark_title_para_text_color);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_custom_dark, R.color.sr_card_stroke_custom_dark, title, R.color.sr_dark_title_para_text_color);
                     break;
             }
         }else{
-            message.setTextColor(activity.getResources().getColor(R.color.para_text_color_lite));
+            message.setTextColor(activity.getResources().getColor(R.color.sr_para_text_color_lite));
             switch (type) {
                 case SUCCESS:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_success_lite, R.color.card_stroke_success_lite, title, R.color.success_title_text_color_lite);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_success_lite, R.color.sr_card_stroke_success_lite, title, R.color.sr_success_title_text_color_lite);
                     break;
                 case ERROR:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_error_lite, R.color.card_stroke_error_lite, title, R.color.error_title_text_color_lite);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_error_lite, R.color.sr_card_stroke_error_lite, title, R.color.sr_error_title_text_color_lite);
                     break;
                 case WARNING:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_warning_lite, R.color.card_stroke_warning_lite, title, R.color.warning_title_text_color_lite);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_warning_lite, R.color.sr_card_stroke_warning_lite, title, R.color.sr_warning_title_text_color_lite);
                     break;
                 case INFO:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_info_lite, R.color.card_stroke_info_lite, title, R.color.info_title_text_color_lite);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_info_lite, R.color.sr_card_stroke_info_lite, title, R.color.sr_info_title_text_color_lite);
                     break;
                 default:
-                    setColorToCard(materialCardView, activity, R.color.card_backgroud_custom_lite, R.color.card_stroke_custom_lite, title, R.color.custom_title_text_color_lite);
+                    setColorToCard(materialCardView, activity, R.color.sr_card_backgroud_custom_lite, R.color.sr_card_stroke_custom_lite, title, R.color.sr_custom_title_text_color_lite);
                     break;
             }
         }
@@ -114,37 +114,37 @@ public class RainbowToast {
         if(mode.equals(DARK)){
             switch (type) {
                 case SUCCESS:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_success_dark_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_success_dark_stoke_lite));
                     break;
                 case ERROR:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_error_dark_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_error_dark_stoke_lite));
                     break;
                 case WARNING:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_warning_dark_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_warning_dark_stoke_lite));
                     break;
                 case INFO:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_info_dark_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_info_dark_stoke_lite));
                     break;
                 default:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_custom_dark_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_custom_dark_stoke_lite));
                     break;
             }
         }else{
             switch (type) {
                 case SUCCESS:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_success_lite_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_success_lite_stoke_lite));
                     break;
                 case ERROR:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_error_lite_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_error_lite_stoke_lite));
                     break;
                 case WARNING:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_warning_lite_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_warning_lite_stoke_lite));
                     break;
                 case INFO:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_info_lite_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_info_lite_stoke_lite));
                     break;
                 default:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_custom_lite_stoke_lite));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_custom_lite_stoke_lite));
                     break;
             }
         }
@@ -154,43 +154,43 @@ public class RainbowToast {
         if(mode.equals(DARK)){
             switch (type) {
                 case SUCCESS:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_success_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_success_dark));
                     break;
                 case ERROR:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_error_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_error_dark));
                     break;
                 case WARNING:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_warning_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_warning_dark));
                     break;
                 case INFO:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_info_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_info_dark));
                     break;
                 default:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_custom_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_custom_dark));
                     break;
             }
         }else{
             switch (type) {
                 case SUCCESS:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_success_lite_stoke_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_success_lite_stoke_dark));
                     break;
                 case ERROR:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_error_lite_stoke_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_error_lite_stoke_dark));
                     break;
                 case WARNING:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_warning_lite_stoke_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_warning_lite_stoke_dark));
                     break;
                 case INFO:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_info_lite_stoke_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_info_lite_stoke_dark));
                     break;
                 default:
-                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.card_stroke_custom_lite_stoke_dark));
+                    materialCardView.setStrokeColor(activity.getResources().getColor(R.color.sr_card_stroke_custom_lite_stoke_dark));
                     break;
             }
         }
     }
 
-    private static void callColorChanger(View view, Activity activity, MaterialCardView materialCardView, Timer timer, String type, String mode){
+    private static void callColorChanger(Activity activity, MaterialCardView materialCardView, Timer timer, String type, String mode){
 
         timer.scheduleAtFixedRate(new TimerTask(){
             @Override

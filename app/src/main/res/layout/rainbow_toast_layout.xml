@@ -9,49 +9,47 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard"
-        android:layout_width="@dimen/card_width"
-        android:layout_height="@dimen/card_height"
+        android:layout_width="@dimen/sr_card_width"
+        android:layout_height="@dimen/sr_card_height"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/card_margin_bottom"
-        app:cardBackgroundColor="@color/card_backgroud_success_lite"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:strokeColor="@color/card_stroke_success_lite"
-        app:strokeWidth="@dimen/card_stroke_width">
+        android:layout_marginBottom="@dimen/sr_card_margin_bottom"
+        app:cardBackgroundColor="@color/sr_card_backgroud_success_lite"
+        app:cardCornerRadius="@dimen/sr_card_corner_radius"
+        app:strokeColor="@color/sr_card_stroke_success_lite"
+        app:strokeWidth="@dimen/sr_card_stroke_width">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/message_layout_inside_cardview_margin"
+            android:layout_marginTop="@dimen/sr_message_layout_inside_cardview_margin"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/rainbowTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/title_message_margin"
-                android:layout_marginRight="@dimen/title_message_margin"
+                android:layout_marginLeft="@dimen/sr_title_message_margin"
+                android:layout_marginRight="@dimen/sr_title_message_margin"
                 android:fontFamily="@font/abeezee_regular"
-                android:maxLength="30"
-                android:maxLines="1"
+                android:maxLines="@integer/sr_message_maxlines"
                 android:text="@string/success_lite"
                 android:textAlignment="center"
-                android:textColor="@color/default_title_text_color_lite"
-                android:textSize="@dimen/title_message_size" />
+                android:textColor="@color/sr_default_title_text_color_lite"
+                android:textSize="@dimen/sr_title_message_size" />
 
             <TextView
                 android:id="@+id/rainbowMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rainbowTitle"
-                android:layout_marginLeft="@dimen/message_margin"
-                android:layout_marginRight="@dimen/message_margin"
+                android:layout_marginLeft="@dimen/sr_message_margin"
+                android:layout_marginRight="@dimen/sr_message_margin"
                 android:fontFamily="@font/abeezee_regular"
-                android:maxLength="200"
-                android:maxLines="2"
+                android:maxLines="@integer/sr_title_message_maxlines"
                 android:text="@string/success_message_lite"
                 android:textAlignment="center"
-                android:textColor="@color/para_text_color_lite"
-                android:textSize="@dimen/para_message_size" />
+                android:textColor="@color/sr_para_text_color_lite"
+                android:textSize="@dimen/sr_para_message_size" />
 
         </RelativeLayout>
 

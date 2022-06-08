@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="sr_title_message_maxlines">1</integer>
+
+    <integer name="sr_message_maxlines">1</integer>
+
+</resources>
