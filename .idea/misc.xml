@@ -3,14 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/RainbowToast/app/src/main/res/drawable/bg.xml" value="0.2515" />
         <entry key="..\:/Android/RainbowToast/app/src/main/res/drawable/ellipse_1.xml" value="0.2085" />
-        <entry key="..\:/Android/RainbowToast/app/src/main/res/drawable/ic_bg.xml" value="0.2515" />
         <entry key="..\:/Android/RainbowToast/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
         <entry key="..\:/Android/RainbowToast/app/src/main/res/layout-land/activity_main.xml" value="0.23236331569664903" />
         <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/halloween_toast_layout.xml" value="0.22435897435897437" />
-        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/rainbow_toast_layout.xml" value="0.72" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/full_rainbow_toast_layout.xml" value="0.22521367521367522" />
+        <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/rainbow_toast_layout.xml" value="0.6" />
         <entry key="..\:/Android/RainbowToast/app/src/main/res/layout/test.xml" value="0.22435897435897437" />
         <entry key="..\:/Android/RainbowToast/app/src/main/res/xml/style.xml" value="0.27447916666666666" />
       </map>
