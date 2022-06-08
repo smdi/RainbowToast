@@ -2,11 +2,11 @@
 <resources>
 
     <!--title message    -->
-    <dimen name="sr_title_message_margin">180dp</dimen>
+    <dimen name="sr_title_message_margin">110dp</dimen>
     <dimen name="sr_title_message_size">14sp</dimen>
 
     <!--para message    -->
-    <dimen name="sr_message_margin">170dp</dimen>
+    <dimen name="sr_message_margin">85dp</dimen>
     <dimen name="sr_para_message_size">10sp</dimen>
 
     <!--message layout    -->
