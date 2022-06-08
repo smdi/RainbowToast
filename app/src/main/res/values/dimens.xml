@@ -2,39 +2,37 @@
 <resources>
 
     <!--title message    -->
-    <dimen name="title_message_margin">90dp</dimen>
-    <dimen name="title_message_maxlines">1</dimen>
-    <dimen name="title_message_size">14sp</dimen>
-    <dimen name="title_message_maxlength">25dp</dimen>
+    <dimen name="fr_title_message_margin">90dp</dimen>
+    <dimen name="fr_title_message_size">14sp</dimen>
+    <dimen name="fr_title_message_maxlength">25dp</dimen>
 
     <!--para message    -->
-    <dimen name="message_margin">70dp</dimen>
-    <dimen name="message_maxlines">1</dimen>
-    <dimen name="para_message_size">10sp</dimen>
-    <dimen name="message_maxlength">50dp</dimen>
+    <dimen name="fr_message_margin">70dp</dimen>
+    <dimen name="fr_para_message_size">10sp</dimen>
+    <dimen name="fr_message_maxlength">50dp</dimen>
 
     <!--message layout    -->
-    <dimen name="message_layout_inside_cardview_margin">25dp</dimen>
+    <dimen name="fr_message_layout_inside_cardview_margin">25dp</dimen>
 
     <!--Card view dimensions    -->
-    <dimen name="card_width">1000dp</dimen>
-    <dimen name="card_height">1000dp</dimen>
-    <dimen name="card_margin_bottom">-930dp</dimen>
-    <dimen name="card_corner_radius">800dp</dimen>
-    <dimen name="card_stroke_width">4dp</dimen>
+    <dimen name="fr_card_width">1000dp</dimen>
+    <dimen name="fr_card_height">1000dp</dimen>
+    <dimen name="fr_card_margin_bottom">-930dp</dimen>
+    <dimen name="fr_card_corner_radius">800dp</dimen>
+    <dimen name="fr_card_stroke_width">4dp</dimen>
 
     <!--Card dimensions    -->
-    <dimen name="card_width2">1010dp</dimen>
-    <dimen name="card_heigh2">1010dp</dimen>
+    <dimen name="fr_card_width2">1010dp</dimen>
+    <dimen name="fr_card_heigh2">1010dp</dimen>
 
-    <dimen name="card_width3">1020dp</dimen>
+    <dimen name="fr_card_width3">1020dp</dimen>
     <dimen name="card_height3">1020dp</dimen>
 
-    <dimen name="card_width4">1030dp</dimen>
-    <dimen name="card_height4">1030dp</dimen>
+    <dimen name="fr_card_width4">1030dp</dimen>
+    <dimen name="fr_card_height4">1030dp</dimen>
 
-    <dimen name="card_width5">1040dp</dimen>
-    <dimen name="card_height5">1040dp</dimen>
+    <dimen name="fr_card_width5">1040dp</dimen>
+    <dimen name="fr_card_height5">1040dp</dimen>
 
-    <dimen name="other_card_margin_bottom">-945dp</dimen>
+    <dimen name="fr_other_card_margin_bottom">-945dp</dimen>
 </resources>

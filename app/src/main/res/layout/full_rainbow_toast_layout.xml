@@ -8,58 +8,58 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard5"
-        android:layout_width="@dimen/card_width5"
-        android:layout_height="@dimen/card_height5"
+        android:layout_width="@dimen/fr_card_width5"
+        android:layout_height="@dimen/fr_card_height5"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/other_card_margin_bottom"
-        app:cardBackgroundColor="@color/rainbow_card5_lite_stroke_lite"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:strokeColor="@color/rainbow_card5_lite_stroke_lite"
-        app:strokeWidth="@dimen/card_stroke_width">
+        android:layout_marginBottom="@dimen/fr_other_card_margin_bottom"
+        app:cardBackgroundColor="@color/fr_rainbow_card5_lite_stroke_lite"
+        app:cardCornerRadius="@dimen/fr_card_corner_radius"
+        app:strokeColor="@color/fr_rainbow_card5_lite_stroke_lite"
+        app:strokeWidth="@dimen/fr_card_stroke_width">
 
 
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard4"
-        android:layout_width="@dimen/card_width4"
-        android:layout_height="@dimen/card_height4"
+        android:layout_width="@dimen/fr_card_width4"
+        android:layout_height="@dimen/fr_card_height4"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/other_card_margin_bottom"
+        android:layout_marginBottom="@dimen/fr_other_card_margin_bottom"
         android:layout_marginTop="4dp"
-        app:cardBackgroundColor="@color/rainbow_card4_lite_stroke_lite"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:strokeColor="@color/rainbow_card4_lite_stroke_lite"
-        app:strokeWidth="@dimen/card_stroke_width">
+        app:cardBackgroundColor="@color/fr_rainbow_card4_lite_stroke_lite"
+        app:cardCornerRadius="@dimen/fr_card_corner_radius"
+        app:strokeColor="@color/fr_rainbow_card4_lite_stroke_lite"
+        app:strokeWidth="@dimen/fr_card_stroke_width">
 
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard3"
-        android:layout_width="@dimen/card_width3"
+        android:layout_width="@dimen/fr_card_width3"
         android:layout_height="@dimen/card_height3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/other_card_margin_bottom"
+        android:layout_marginBottom="@dimen/fr_other_card_margin_bottom"
         android:layout_marginTop="8dp"
-        app:cardBackgroundColor="@color/rainbow_card3_lite_stroke_lite"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:strokeColor="@color/rainbow_card3_lite_stroke_lite"
-        app:strokeWidth="@dimen/card_stroke_width">
+        app:cardBackgroundColor="@color/fr_rainbow_card3_lite_stroke_lite"
+        app:cardCornerRadius="@dimen/fr_card_corner_radius"
+        app:strokeColor="@color/fr_rainbow_card3_lite_stroke_lite"
+        app:strokeWidth="@dimen/fr_card_stroke_width">
 
 
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard2"
-        android:layout_width="@dimen/card_width2"
-        android:layout_height="@dimen/card_heigh2"
+        android:layout_width="@dimen/fr_card_width2"
+        android:layout_height="@dimen/fr_card_heigh2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/other_card_margin_bottom"
+        android:layout_marginBottom="@dimen/fr_other_card_margin_bottom"
         android:layout_marginTop="12dp"
-        app:cardBackgroundColor="@color/rainbow_card2_lite_stroke_lite"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:strokeColor="@color/rainbow_card2_lite_stroke_lite"
-        app:strokeWidth="@dimen/card_stroke_width">
+        app:cardBackgroundColor="@color/fr_rainbow_card2_lite_stroke_lite"
+        app:cardCornerRadius="@dimen/fr_card_corner_radius"
+        app:strokeColor="@color/fr_rainbow_card2_lite_stroke_lite"
+        app:strokeWidth="@dimen/fr_card_stroke_width">
 
 
 
@@ -67,35 +67,35 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/rainbowCard"
-        android:layout_width="@dimen/card_width"
-        android:layout_height="@dimen/card_height"
+        android:layout_width="@dimen/fr_card_width"
+        android:layout_height="@dimen/fr_card_height"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="@dimen/card_margin_bottom"
-        app:cardBackgroundColor="@color/card_backgroud_custom_lite"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        app:strokeColor="@color/rainbow_card_lite_stroke_lite"
-        app:strokeWidth="@dimen/card_stroke_width">
+        android:layout_marginBottom="@dimen/fr_card_margin_bottom"
+        app:cardBackgroundColor="@color/fr_card_backgroud_custom_lite"
+        app:cardCornerRadius="@dimen/fr_card_corner_radius"
+        app:strokeColor="@color/fr_rainbow_card_lite_stroke_lite"
+        app:strokeWidth="@dimen/fr_card_stroke_width">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/message_layout_inside_cardview_margin"
+            android:layout_marginTop="@dimen/fr_message_layout_inside_cardview_margin"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/rainbowTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/title_message_margin"
-                android:layout_marginRight="@dimen/title_message_margin"
+                android:layout_marginLeft="@dimen/fr_title_message_margin"
+                android:layout_marginRight="@dimen/fr_title_message_margin"
                 android:fontFamily="@font/abeezee_regular"
                 android:maxLength="30"
                 android:maxLines="1"
                 android:text="@string/success_lite"
                 android:textAlignment="center"
-                android:textSize="@dimen/title_message_size"
-                android:textColor="@color/custom_title_text_color_lite"
+                android:textSize="@dimen/fr_title_message_size"
+                android:textColor="@color/fr_custom_title_text_color_lite"
                 />
 
             <TextView
@@ -103,15 +103,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rainbowTitle"
-                android:layout_marginLeft="@dimen/message_margin"
-                android:layout_marginRight="@dimen/message_margin"
+                android:layout_marginLeft="@dimen/fr_message_margin"
+                android:layout_marginRight="@dimen/fr_message_margin"
                 android:fontFamily="@font/abeezee_regular"
                 android:maxLength="200"
                 android:maxLines="2"
                 android:text="@string/success_message_lite"
                 android:textAlignment="center"
-                android:textSize="@dimen/para_message_size"
-                android:textColor="@color/para_text_color_lite"
+                android:textSize="@dimen/fr_para_message_size"
+                android:textColor="@color/fr_para_text_color_lite"
                 />
 
         </RelativeLayout>

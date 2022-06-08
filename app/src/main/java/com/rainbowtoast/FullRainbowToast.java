@@ -21,8 +21,6 @@ public class FullRainbowToast {
     private static int stopAfter = 0;
     private static final int STOP_AFTER2K = 2000;
     private static final int STOP_AFTER4K = 4000;
-    public static final String LITE = "LITE";
-    public static final String DARK = "DARK";
     public static final int LENGTH_SHORT = 2;
     public static final int LENGTH_LONG = 4;
 
@@ -58,28 +56,28 @@ public class FullRainbowToast {
 
     private static void setColorToText(Activity activity, TextView title, TextView message, MaterialCardView materialCardView) {
 
-        title.setTextColor(activity.getResources().getColor(R.color.custom_title_text_color_lite));
-        message.setTextColor(activity.getResources().getColor(R.color.para_text_color_lite));
-        materialCardView.setCardBackgroundColor(activity.getResources().getColor(R.color.card_backgroud_custom_lite));
+        title.setTextColor(activity.getResources().getColor(R.color.fr_custom_title_text_color_lite));
+        message.setTextColor(activity.getResources().getColor(R.color.fr_para_text_color_lite));
+        materialCardView.setCardBackgroundColor(activity.getResources().getColor(R.color.fr_card_backgroud_custom_lite));
 
     }
 
     private static void setColorToCardStrokeLite(Activity activity, MaterialCardView... materialCardView){
 
-        materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_lite));
-        materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_lite));
-        materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_lite));
-        materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_lite));
-        materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_lite));
+        materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card_lite_stroke_lite));
+        materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card2_lite_stroke_lite));
+        materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card3_lite_stroke_lite));
+        materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card4_lite_stroke_lite));
+        materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card5_lite_stroke_lite));
 
     }
     private static void setColorToCardStrokeDark(Activity activity, MaterialCardView... materialCardView){
 
-        materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card_lite_stroke_dark));
-        materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card2_lite_stroke_dark));
-        materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card3_lite_stroke_dark));
-        materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card4_lite_stroke_dark));
-        materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.rainbow_card5_lite_stroke_dark));
+        materialCardView[0].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card_lite_stroke_dark));
+        materialCardView[1].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card2_lite_stroke_dark));
+        materialCardView[2].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card3_lite_stroke_dark));
+        materialCardView[3].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card4_lite_stroke_dark));
+        materialCardView[4].setStrokeColor(activity.getResources().getColor(R.color.fr_rainbow_card5_lite_stroke_dark));
 
     }
 
