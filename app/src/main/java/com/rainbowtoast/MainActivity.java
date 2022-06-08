@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        HalloweenToast.showToast(this, "Success", "Connection established successfully!",
-                HalloweenToast.LENGTH_SHORT, HalloweenToast.CUSTOM, HalloweenToast.LITE );
+        HalloweenToast.showToast(this, "Demons", "You are surrounded by demons!",
+                HalloweenToast.LENGTH_SHORT, HalloweenToast.ERROR, HalloweenToast.LITE );
     }
 }
