@@ -7,7 +7,7 @@
     <dimen name="fr_title_message_maxlength">25dp</dimen>
 
     <!--para message    -->
-    <dimen name="fr_message_margin">85dp</dimen>
+    <dimen name="fr_message_margin">60dp</dimen>
     <dimen name="fr_para_message_size">10sp</dimen>
     <dimen name="fr_message_maxlength">50dp</dimen>
 
