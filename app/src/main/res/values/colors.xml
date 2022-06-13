@@ -67,4 +67,23 @@
     <color name="sr_dark_title_para_text_color">#FFFFFF</color>
     <color name="sr_para_text_color_lite">#666666</color>
     <color name="sr_default_title_text_color_lite">#666666</color>
+    <!--lite    -->
+    <color name="fr_card_backgroud_custom_lite">#D9ECCAED</color>
+
+    <!--text colors    -->
+    <color name="fr_custom_title_text_color_lite">#A64C9D</color>
+    <color name="fr_para_text_color_lite">#856782</color>
+
+    <!--rainbow lite stroke lite    -->
+    <color name="fr_rainbow_card_lite_stroke_lite">#FAAFF2</color>
+    <color name="fr_rainbow_card2_lite_stroke_lite">#9D95FF</color>
+    <color name="fr_rainbow_card3_lite_stroke_lite">#8FF599</color>
+    <color name="fr_rainbow_card4_lite_stroke_lite">#FDFF8E</color>
+    <color name="fr_rainbow_card5_lite_stroke_lite">#FF9C9C</color>
+    <!--rainbow lite stroke dark    -->
+    <color name="fr_rainbow_card_lite_stroke_dark">#FD83F2</color>
+    <color name="fr_rainbow_card2_lite_stroke_dark">#756BF6</color>
+    <color name="fr_rainbow_card3_lite_stroke_dark">#7EF388</color>
+    <color name="fr_rainbow_card4_lite_stroke_dark">#E6E87D</color>
+    <color name="fr_rainbow_card5_lite_stroke_dark">#EC7D7D</color>
 </resources>

@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        RainbowToast.showToast(this, "Delete", "Connection terminated successfully!",
-                RainbowToast.LENGTH_SHORT, RainbowToast.ERROR, RainbowToast.LITE );
+        FullRainbowToast.showToast(this, "Treat", "You have won chocolates and candies!",
+                FullRainbowToast.LENGTH_LONG );
     }
 }
