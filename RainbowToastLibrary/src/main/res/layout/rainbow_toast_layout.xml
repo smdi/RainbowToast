@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/rainbowToast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rainbowCard"
+        android:layout_width="@dimen/sr_card_width"
+        android:layout_height="@dimen/sr_card_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/sr_card_margin_bottom"
+        app:cardBackgroundColor="@color/sr_card_backgroud_success_lite"
+        app:cardCornerRadius="@dimen/sr_card_corner_radius"
+        app:strokeColor="@color/sr_card_stroke_success_lite"
+        app:strokeWidth="@dimen/sr_card_stroke_width">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sr_message_layout_inside_cardview_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rainbowTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sr_title_message_margin"
+                android:layout_marginRight="@dimen/sr_title_message_margin"
+                android:fontFamily="@font/rainbow_regular"
+                android:maxLength="@integer/sr_title_message_maxlength"
+                android:maxLines="@integer/sr_title_message_maxlines"
+                android:text="@string/success_lite"
+                android:textAlignment="center"
+                android:textColor="@color/sr_default_title_text_color_lite"
+                android:textSize="@dimen/sr_title_message_size" />
+
+            <TextView
+                android:id="@+id/rainbowMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rainbowTitle"
+                android:layout_marginLeft="@dimen/sr_message_margin"
+                android:layout_marginRight="@dimen/sr_message_margin"
+                android:fontFamily="@font/rainbow_regular"
+                android:maxLength="@integer/sr_message_maxlength"
+                android:maxLines="@integer/sr_message_maxlines"
+                android:text="@string/success_message_lite"
+                android:textAlignment="center"
+                android:textColor="@color/sr_para_text_color_lite"
+                android:textSize="@dimen/sr_para_message_size" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

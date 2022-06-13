@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--title message    -->
+    <dimen name="sr_title_message_margin">110dp</dimen>
+    <dimen name="sr_title_message_size">14sp</dimen>
+
+    <!--para message    -->
+    <dimen name="sr_message_margin">85dp</dimen>
+    <dimen name="sr_para_message_size">10sp</dimen>
+
+    <!--message layout    -->
+    <dimen name="sr_message_layout_inside_cardview_margin">25dp</dimen>
+
+    <!--Card view dimensions    -->
+    <dimen name="sr_card_width">1000dp</dimen>
+    <dimen name="sr_card_height">1000dp</dimen>
+    <dimen name="sr_card_margin_bottom">-930dp</dimen>
+    <dimen name="sr_card_corner_radius">800dp</dimen>
+    <dimen name="sr_card_stroke_width">4dp</dimen>
+    <dimen name="fr_title_message_margin">110dp</dimen>
+    <dimen name="fr_title_message_size">14sp</dimen>
+    <dimen name="fr_title_message_maxlength">25dp</dimen>
+
+    <!--para message    -->
+    <dimen name="fr_message_margin">60dp</dimen>
+    <dimen name="fr_para_message_size">10sp</dimen>
+    <dimen name="fr_message_maxlength">50dp</dimen>
+
+    <!--message layout    -->
+    <dimen name="fr_message_layout_inside_cardview_margin">25dp</dimen>
+
+    <!--Card view dimensions    -->
+    <dimen name="fr_card_width">1000dp</dimen>
+    <dimen name="fr_card_height">1000dp</dimen>
+    <dimen name="fr_card_margin_bottom">-930dp</dimen>
+    <dimen name="fr_card_corner_radius">800dp</dimen>
+    <dimen name="fr_card_stroke_width">4dp</dimen>
+
+    <!--Card dimensions    -->
+    <dimen name="fr_card_width2">1010dp</dimen>
+    <dimen name="fr_card_heigh2">1010dp</dimen>
+
+    <dimen name="fr_card_width3">1020dp</dimen>
+    <dimen name="card_height3">1020dp</dimen>
+
+    <dimen name="fr_card_width4">1030dp</dimen>
+    <dimen name="fr_card_height4">1030dp</dimen>
+
+    <dimen name="fr_card_width5">1040dp</dimen>
+    <dimen name="fr_card_height5">1040dp</dimen>
+
+    <dimen name="fr_other_card_margin_bottom">-945dp</dimen>
+</resources>
