@@ -1,4 +1,4 @@
-Hey! there👋, I have designed this beautiful Toast Library for Java & Kotlin
+Hey! there👋, I have designed this beautiful Toast Library for Java & Kotlin to satisfy all the toast designs requirements of businesses
 
 
 
