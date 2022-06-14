@@ -2,14 +2,17 @@
 <resources>
 
     <integer name="sr_title_message_maxlines">1</integer>
-    <integer name="sr_title_message_maxlength">50</integer>
+    <integer name="sr_title_message_maxlength">100</integer>
+    <integer name="sfr_title_message_fontweight">600</integer>
 
     <integer name="sr_message_maxlines">2</integer>
-    <integer name="sr_message_maxlength">100</integer>
+    <integer name="sr_message_maxlength">200</integer>
+    <integer name="sfr_message_fontweight">200</integer>
+
     <integer name="fr_title_message_maxlines">1</integer>
-    <integer name="fr_title_message_maxlength">50</integer>
+    <integer name="fr_title_message_maxlength">100</integer>
 
     <integer name="fr_message_maxlines">2</integer>
-    <integer name="fr_message_maxlength">100</integer>
+    <integer name="fr_message_maxlength">200</integer>
 
 </resources>

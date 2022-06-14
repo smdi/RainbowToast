@@ -81,9 +81,11 @@
     <color name="fr_rainbow_card4_lite_stroke_lite">#FDFF8E</color>
     <color name="fr_rainbow_card5_lite_stroke_lite">#FF9C9C</color>
     <!--rainbow lite stroke dark    -->
-    <color name="fr_rainbow_card_lite_stroke_dark">#FD83F2</color>
-    <color name="fr_rainbow_card2_lite_stroke_dark">#756BF6</color>
-    <color name="fr_rainbow_card3_lite_stroke_dark">#7EF388</color>
-    <color name="fr_rainbow_card4_lite_stroke_dark">#E6E87D</color>
-    <color name="fr_rainbow_card5_lite_stroke_dark">#EC7D7D</color>
+    <color name="fr_rainbow_card_lite_stroke_dark">#FE5AEE</color>
+    <color name="fr_rainbow_card2_lite_stroke_dark">#6A5DFB</color>
+    <color name="fr_rainbow_card3_lite_stroke_dark">#73DC7E</color>
+    <color name="fr_rainbow_card4_lite_stroke_dark">#ECEE73</color>
+    <color name="fr_rainbow_card5_lite_stroke_dark">#F86464</color>
+
+    <color name="button_background">#CECECE</color>
 </resources>

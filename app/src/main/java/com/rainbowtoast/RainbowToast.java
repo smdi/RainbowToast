@@ -20,8 +20,8 @@ public class RainbowToast {
     private static int cancelTimer = DELAY_TIMER;
     private static final int RUN_INTERVAL = 1000;
     private static int stopAfter = 0;
-    private static final int STOP_AFTER2K = 2000;
-    private static final int STOP_AFTER4K = 4000;
+    private static final int STOP_AFTER2K = 1500;
+    private static final int STOP_AFTER4K = 3500;
     public static final String SUCCESS = "SUCCESS";
     public static final String ERROR = "ERROR";
     public static final String WARNING = "WARNING";

@@ -19,8 +19,8 @@ public class FullRainbowToast {
     private static int cancelTimer = DELAY_TIMER;
     private static final int RUN_INTERVAL = 1000;
     private static int stopAfter = 0;
-    private static final int STOP_AFTER2K = 2000;
-    private static final int STOP_AFTER4K = 4000;
+    private static final int STOP_AFTER2K = 1500;
+    private static final int STOP_AFTER4K = 3500;
     public static final int LENGTH_SHORT = 2;
     public static final int LENGTH_LONG = 4;
 
@@ -45,7 +45,7 @@ public class FullRainbowToast {
         }
 
         setColorToText(activity, title, message, materialCardView);
-        callColorChanger(activity, timer, materialCardView, materialCardView2, materialCardView3, materialCardView4, materialCardView5);
+//        callColorChanger(activity, timer, materialCardView, materialCardView2, materialCardView3, materialCardView4, materialCardView5);
         title.setText(titleData);
         message.setText(messageData);
         toast.setDuration(duration);
