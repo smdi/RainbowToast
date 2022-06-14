@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--title message    -->
+    <dimen name="ht_title_message_margin_30">30dp</dimen>
+    <dimen name="ht_title_message_size_14">14sp</dimen>
+    <dimen name="ht_title_message_padding_left_10">10dp</dimen>
+    <dimen name="ht_title_message_padding_right_10">35dp</dimen>
+
+    <!--para message    -->
+    <dimen name="ht_para_message_margin_30">30dp</dimen>
+    <dimen name="ht_para_message_size_10">10sp</dimen>
+    <dimen name="ht_para_message_padding_right_20">20dp</dimen>
+
+    <!--message layout    -->
+    <dimen name="ht_message_layout_margin_left_55">55dp</dimen>
+    <dimen name="ht_message_layout_margin_top_50">50dp</dimen>
+
+    <!--Card view dimensions    -->
+    <dimen name="ht_card_width_300">300dp</dimen>
+    <dimen name="ht_card_height_160">160dp</dimen>
+
+</resources>
