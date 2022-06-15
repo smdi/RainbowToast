@@ -1,11 +1,14 @@
-package com.aidev.rainbowtoastlibrary;
+package com.rainbowtoast;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.res.ResourcesCompat;
 
 import com.google.android.material.card.MaterialCardView;
 
@@ -19,12 +22,13 @@ public class FullRainbowToast {
     private static int cancelTimer = DELAY_TIMER;
     private static final int RUN_INTERVAL = 1000;
     private static int stopAfter = 0;
-    private static final int STOP_AFTER2K = 2000;
-    private static final int STOP_AFTER4K = 4000;
+    private static final int STOP_AFTER2K = 1500;
+    private static final int STOP_AFTER4K = 3500;
     public static final int LENGTH_SHORT = 2;
     public static final int LENGTH_LONG = 4;
 
-    public static void showToast(Activity activity, String titleData, String messageData, int duration) {
+    public static void showToast(Activity activity, String titleData, String messageData,
+                                 int duration, int titleFont, int messageFont) {
 
         View view = LayoutInflater.from(activity)
                 .inflate(R.layout.full_rainbow_toast_layout, null);
@@ -34,9 +38,19 @@ public class FullRainbowToast {
         MaterialCardView materialCardView3 = view.findViewById(R.id.rainbowCard3);
         MaterialCardView materialCardView4 = view.findViewById(R.id.rainbowCard4);
         MaterialCardView materialCardView5 = view.findViewById(R.id.rainbowCard5);
+
         TextView title = view.findViewById(R.id.rainbowTitle);
         TextView message = view.findViewById(R.id.rainbowMessage);
-        Toast toast = new Toast(activity);
+
+        Typeface fontTitle = ResourcesCompat.getFont(activity, titleFont);
+        Typeface fontMessage = ResourcesCompat.getFont(activity, messageFont);
+
+        title.setTypeface(fontTitle);
+        message.setTypeface(fontMessage);
+
+        title.setText(titleData);
+        message.setText(messageData);
+
 
         if(duration == LENGTH_LONG){
             stopAfter = STOP_AFTER4K;
@@ -46,8 +60,8 @@ public class FullRainbowToast {
 
         setColorToText(activity, title, message, materialCardView);
         callColorChanger(activity, timer, materialCardView, materialCardView2, materialCardView3, materialCardView4, materialCardView5);
-        title.setText(titleData);
-        message.setText(messageData);
+
+        Toast toast = new Toast(activity);
         toast.setDuration(duration);
         toast.setGravity(Gravity.BOTTOM, 0, 0);
         toast.setView(view);

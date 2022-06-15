@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/rainbowToast"
     android:layout_width="wrap_content"
@@ -16,7 +17,6 @@
         app:cardCornerRadius="@dimen/fr_card_corner_radius"
         app:strokeColor="@color/fr_rainbow_card5_lite_stroke_lite"
         app:strokeWidth="@dimen/fr_card_stroke_width">
-
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -46,7 +46,6 @@
         app:strokeColor="@color/fr_rainbow_card3_lite_stroke_lite"
         app:strokeWidth="@dimen/fr_card_stroke_width">
 
-
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -60,8 +59,6 @@
         app:cardCornerRadius="@dimen/fr_card_corner_radius"
         app:strokeColor="@color/fr_rainbow_card2_lite_stroke_lite"
         app:strokeWidth="@dimen/fr_card_stroke_width">
-
-
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -89,14 +86,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/fr_title_message_margin"
                 android:layout_marginRight="@dimen/fr_title_message_margin"
-                android:fontFamily="@font/rainbow_regular"
+                android:textFontWeight="@integer/sfr_title_message_fontweight"
                 android:maxLines="@integer/fr_title_message_maxlines"
                 android:maxLength="@integer/fr_title_message_maxlength"
                 android:text="@string/success_lite"
                 android:textAlignment="center"
                 android:textSize="@dimen/fr_title_message_size"
                 android:textColor="@color/fr_custom_title_text_color_lite"
-                />
+                tools:targetApi="p" />
 
             <TextView
                 android:id="@+id/rainbowMessage"
@@ -105,17 +102,17 @@
                 android:layout_below="@id/rainbowTitle"
                 android:layout_marginLeft="@dimen/fr_message_margin"
                 android:layout_marginRight="@dimen/fr_message_margin"
-                android:fontFamily="@font/rainbow_regular"
+                android:layout_marginTop="@dimen/sfr_para_message_margintop"
+                android:textFontWeight="@integer/sfr_message_fontweight"
                 android:maxLines="@integer/fr_message_maxlines"
                 android:maxLength="@integer/fr_message_maxlength"
                 android:text="@string/success_message_lite"
                 android:textAlignment="center"
                 android:textSize="@dimen/fr_para_message_size"
                 android:textColor="@color/fr_para_text_color_lite"
-                />
+                tools:targetApi="p" />
 
         </RelativeLayout>
-
 
     </com.google.android.material.card.MaterialCardView>
 
