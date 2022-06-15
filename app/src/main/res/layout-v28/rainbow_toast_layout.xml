@@ -30,7 +30,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/sr_title_message_margin"
                 android:layout_marginRight="@dimen/sr_title_message_margin"
-                android:fontFamily="@font/abeezee_regular"
                 android:maxLength="@integer/sr_title_message_maxlength"
                 android:maxLines="@integer/sr_title_message_maxlines"
                 android:text="@string/success_lite"
@@ -47,15 +46,15 @@
                 android:layout_below="@id/rainbowTitle"
                 android:layout_marginLeft="@dimen/sr_message_margin"
                 android:layout_marginRight="@dimen/sr_message_margin"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/abeezee_regular"
+                android:layout_marginTop="@dimen/sfr_para_message_margintop"
                 android:maxLength="@integer/sr_message_maxlength"
                 android:maxLines="@integer/sr_message_maxlines"
-                android:textFontWeight="200"
+                android:textFontWeight="@integer/sfr_message_fontweight"
                 android:text="@string/success_message_lite"
                 android:textAlignment="center"
                 android:textColor="@color/sr_para_text_color_lite"
-                android:textSize="@dimen/sr_para_message_size" />
+                android:textSize="@dimen/sr_para_message_size"
+                tools:targetApi="p" />
 
         </RelativeLayout>
 

@@ -18,7 +18,6 @@
         app:strokeColor="@color/fr_rainbow_card5_lite_stroke_lite"
         app:strokeWidth="@dimen/fr_card_stroke_width">
 
-
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -47,7 +46,6 @@
         app:strokeColor="@color/fr_rainbow_card3_lite_stroke_lite"
         app:strokeWidth="@dimen/fr_card_stroke_width">
 
-
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -61,8 +59,6 @@
         app:cardCornerRadius="@dimen/fr_card_corner_radius"
         app:strokeColor="@color/fr_rainbow_card2_lite_stroke_lite"
         app:strokeWidth="@dimen/fr_card_stroke_width">
-
-
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -90,7 +86,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/fr_title_message_margin"
                 android:layout_marginRight="@dimen/fr_title_message_margin"
-                android:fontFamily="@font/abeezee_regular"
                 android:textFontWeight="@integer/sfr_title_message_fontweight"
                 android:maxLines="@integer/fr_title_message_maxlines"
                 android:maxLength="@integer/fr_title_message_maxlength"
@@ -108,7 +103,6 @@
                 android:layout_marginLeft="@dimen/fr_message_margin"
                 android:layout_marginRight="@dimen/fr_message_margin"
                 android:layout_marginTop="@dimen/sfr_para_message_margintop"
-                android:fontFamily="@font/abeezee_regular"
                 android:textFontWeight="@integer/sfr_message_fontweight"
                 android:maxLines="@integer/fr_message_maxlines"
                 android:maxLength="@integer/fr_message_maxlength"
@@ -119,7 +113,6 @@
                 tools:targetApi="p" />
 
         </RelativeLayout>
-
 
     </com.google.android.material.card.MaterialCardView>
 
