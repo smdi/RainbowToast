@@ -1,14 +1,9 @@
 
-# Toast Library
+#Rainbow🌈🌦 Toast Library
 
-## Hey there👋, I have designed this beautiful Toast Library for Java & Kotlin to satisfy all the toast designs requirements of businesses
+## Hey there👋, I have designed this beautiful Rainbow🌈🌦 Toast Library for Java & Kotlin
 
-### Contents
-
-### 1) [Rainbow Toast Library🌈🌦](#rainbow-toast-library) - 0.x.x
-### 2) [Halloween Toast Library🎃🦇](#halloween-toast-library) - 1.x.x
-
-### Rainbow Toast Library
+### Rainbow🌈🌦 Toast Library
 
 ![Rainbow Dashboard](https://user-images.githubusercontent.com/30797411/173832748-4ab928f9-54e2-4f0a-9bd2-a77c14ea5b82.svg)
 
@@ -18,7 +13,7 @@
 
 https://user-images.githubusercontent.com/30797411/173833000-20eef63b-44ad-4f8f-8c81-80b0a55d40f1.mp4
 
-### Project Dependency for Rainbow Toast Library - 0.x.x
+### Project Dependency for Rainbow Toast Library
 
 ```
 allprojects {
@@ -29,7 +24,7 @@ allprojects {
 	}
 ```
 
-### Module Dependency for Rainbow Toast Library - 0.x.x
+### Module Dependency for Rainbow Toast Library
 
 ```
 dependencies {
@@ -39,7 +34,7 @@ dependencies {
 
 ```
 
-### Implementation for Rainbow Toast Library - 0.x.x
+### Implementation for Rainbow Toast Library
 
 ```
 RainbowToast.showToast(mainActivity,                //activity
@@ -52,7 +47,31 @@ RainbowToast.showToast(mainActivity,                //activity
                         R.font.abeezee_regular);           //font for message
 ```
 
-### Implementation for Full Rainbow Toast Library - 0.x.x
+### Five✋ types
+
+'''
+RainbowToast.SUCCESS
+RainbowToast.ERROR
+RainbowToast.WARNING
+RainbowToast.INFO
+RainbowToast.CUSTOM
+'''
+
+### Two✌ modes
+
+```
+RainbowToast.LITE
+RainbowToast.DARK
+```
+
+### Two✌ dedicated durations
+
+```
+RainbowToast.LENGTH_SHORT       //2 seconds
+RainbowToast.LENGTH_LONG        //4 seconds
+```
+
+### Implementation for Full Rainbow Toast Library
 
 ```
 FullRainbowToast.showToast(mainActivity,                                                                //activity
@@ -61,6 +80,10 @@ FullRainbowToast.showToast(mainActivity,                                        
                           FullRainbowToast.LENGTH_LONG,                                                    //duration
                           R.font.abeezee_regular,                                                           //font for title
                           R.font.abeezee_regular);                                                           //font for message
+```
+
+```diff
+- Note: Types & Modes are not supported for FullRainbowToast
 ```
 
 ### Halloween Toast Library
@@ -73,7 +96,7 @@ FullRainbowToast.showToast(mainActivity,                                        
 
 https://user-images.githubusercontent.com/30797411/173805516-eaa8e092-352c-4d38-8125-427f8f2aa5d8.mp4
 
-### Project Dependency for Halloween Toast Library - 1.x.x
+### Project Dependency for Halloween Toast Library
 
 ```
 allprojects {
@@ -84,7 +107,7 @@ allprojects {
 	}
 ```
 
-### Module Dependency for Halloween Toast Library - 1.x.x
+### Module Dependency for Halloween Toast Library
 
 ```
 dependencies {
@@ -94,7 +117,7 @@ dependencies {
 
 ```
 
-### Implementation for Halloween Toast Library - 1.x.x
+### Implementation for Halloween Toast Library
 
 ```
 HalloweenToast.showToast(mainActivity,                   //activity
