@@ -1,7 +1,6 @@
 package com.rainbowtoast;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,58 +26,28 @@ public class MainActivity extends AppCompatActivity {
         Button custom = mainActivity.findViewById(R.id.Custom);
         Button fullRainbow= mainActivity.findViewById(R.id.FullRainbow);
 
-        success.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RainbowToast.showToast(mainActivity, "Greetings", "Welcome to FairyLand",
-                        RainbowToast.LENGTH_LONG, RainbowToast.SUCCESS, RainbowToast.LITE,
-                        R.font.abeezee_regular, R.font.abeezee_regular);
-            }
-        });
+        success.setOnClickListener(v -> RainbowToast.showToast(mainActivity, "Greetings", "Welcome to FairyLand",
+                RainbowToast.LENGTH_LONG, RainbowToast.SUCCESS, RainbowToast.LITE,
+                R.font.abeezee_regular, R.font.abeezee_regular));
 
-        error.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RainbowToast.showToast(mainActivity, "Hemlock", "Poisoned by witch",
-                        RainbowToast.LENGTH_LONG, RainbowToast.ERROR, RainbowToast.LITE,
-                        R.font.abeezee_regular, R.font.abeezee_regular);
-            }
-        });
+        error.setOnClickListener(v -> RainbowToast.showToast(mainActivity, "Hemlock", "Poisoned by witch",
+                RainbowToast.LENGTH_LONG, RainbowToast.ERROR, RainbowToast.LITE,
+                R.font.abeezee_regular, R.font.abeezee_regular));
 
-        warning.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RainbowToast.showToast(mainActivity, "Hound", "Peeped by witch",
-                        RainbowToast.LENGTH_LONG, RainbowToast.WARNING, RainbowToast.LITE,
-                        R.font.abeezee_regular, R.font.abeezee_regular);
-            }
-        });
+        warning.setOnClickListener(v -> RainbowToast.showToast(mainActivity, "Hound", "Peeped by witch",
+                RainbowToast.LENGTH_LONG, RainbowToast.WARNING, RainbowToast.LITE,
+                R.font.abeezee_regular, R.font.abeezee_regular));
 
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RainbowToast.showToast(mainActivity, "Aspirin", "Medicine is in the cave",
-                        RainbowToast.LENGTH_LONG, RainbowToast.INFO, RainbowToast.LITE,
-                        R.font.abeezee_regular, R.font.abeezee_regular);
-            }
-        });
+        info.setOnClickListener(v -> RainbowToast.showToast(mainActivity, "Aspirin", "Medicine is in the cave",
+                RainbowToast.LENGTH_LONG, RainbowToast.INFO, RainbowToast.LITE,
+                R.font.abeezee_regular, R.font.abeezee_regular));
 
-        custom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                RainbowToast.showToast(mainActivity, "Hint", "Grab the Magic Wand",
-                        RainbowToast.LENGTH_LONG, RainbowToast.CUSTOM, RainbowToast.LITE,
-                        R.font.abeezee_regular, R.font.abeezee_regular);
-            }
-        });
+        custom.setOnClickListener(v -> RainbowToast.showToast(mainActivity, "Hint", "Grab the Magic Wand",
+                RainbowToast.LENGTH_LONG, RainbowToast.CUSTOM, RainbowToast.LITE,
+                R.font.abeezee_regular, R.font.abeezee_regular));
 
-        fullRainbow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FullRainbowToast.showToast(mainActivity, "Blessed", "Great, You've escaped from witch and won chocolates & candies",
-                        FullRainbowToast.LENGTH_LONG, R.font.abeezee_regular, R.font.abeezee_regular);
-            }
-        });
+        fullRainbow.setOnClickListener(v -> FullRainbowToast.showToast(mainActivity, "Blessed", "Great, You've escaped from witch and won chocolates & candies",
+                FullRainbowToast.LENGTH_LONG, R.font.abeezee_regular, R.font.abeezee_regular));
 
     }
 }
