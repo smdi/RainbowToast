@@ -8,7 +8,7 @@
 ### 1) [Rainbow Toast Library🌈🌦](#rainbow-toast-library) - 0.x.x
 ### 2) [Halloween Toast Library🎃🦇](#halloween-toast-library) - 1.x.x
 
-# Rainbow Toast Library
+### Rainbow Toast Library
 
 ![Rainbow Dashboard](https://user-images.githubusercontent.com/30797411/173832748-4ab928f9-54e2-4f0a-9bd2-a77c14ea5b82.svg)
 
@@ -16,7 +16,7 @@
 
 https://user-images.githubusercontent.com/30797411/173833000-20eef63b-44ad-4f8f-8c81-80b0a55d40f1.mp4
 
-# Halloween Toast Library
+### Halloween Toast Library
 
 ![Halloween Dashboard](https://user-images.githubusercontent.com/30797411/173759066-88f9f0ca-2de2-4cad-baa5-699b6ad1e0be.svg)
 
