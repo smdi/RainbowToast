@@ -18,4 +18,6 @@ Hey! there👋, I have designed this beautiful Toast Library for Java & Kotlin t
 
 ![Halloween Dashboard](https://user-images.githubusercontent.com/30797411/173585931-c1bc56a5-6927-4b6b-8bce-4fa00200dfcb.svg)
 
-![HalloweenToast](https://user-images.githubusercontent.com/30797411/173769817-8eee46de-3a2c-4855-86df-0f4061ad8b5e.gif)
+https://user-images.githubusercontent.com/30797411/173780054-da9c2b9b-0b52-4759-a443-39aa8e38595a.mp4
+
+
