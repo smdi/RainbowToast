@@ -1,4 +1,4 @@
-package com.rainbowtoast;
+package com.aidev.rainbowtoastlibrary;
 
 import android.app.Activity;
 import android.graphics.Typeface;
