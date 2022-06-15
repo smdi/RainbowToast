@@ -49,13 +49,13 @@ RainbowToast.showToast(mainActivity,                //activity
 
 ### Five✋ types
 
-'''
+```
 RainbowToast.SUCCESS
 RainbowToast.ERROR
 RainbowToast.WARNING
 RainbowToast.INFO
 RainbowToast.CUSTOM
-'''
+```
 
 ### Two✌ modes
 
