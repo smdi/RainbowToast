@@ -34,7 +34,7 @@ allprojects {
 ```
 dependencies {
 	        
-          implementation 'com.github.smdi:ToastLibrary:0.1.1'
+          implementation 'com.github.smdi:ToastLibrary:RainbowToast-v0.1.1'
 }
 
 ```
@@ -89,7 +89,7 @@ allprojects {
 ```
 dependencies {
 
-	        implementation 'com.github.smdi:ToastLibrary:1.1.1'
+	  implementation 'com.github.smdi:ToastLibrary:HalloweenToast-v1.1.1'
 }
 
 ```
