@@ -74,12 +74,12 @@ RainbowToast.LENGTH_LONG        //4 seconds
 ### Implementation for Full Rainbow Toast Library
 
 ```
-FullRainbowToast.showToast(mainActivity,                                                                //activity
-                          "Blessed",                                                                     //title
-                          "Great, You've escaped from witch and won chocolates & candies",                //message
-                          FullRainbowToast.LENGTH_LONG,                                                    //duration
-                          R.font.abeezee_regular,                                                           //font for title
-                          R.font.abeezee_regular);                                                           //font for message
+FullRainbowToast.showToast(mainActivity,                                                        //activity
+                          "Blessed",                                                             //title
+                          "Great, You've escaped from witch and won chocolates & candies",        //message
+                          FullRainbowToast.LENGTH_LONG,                                            //duration
+                          R.font.abeezee_regular,                                                   //font for title
+                          R.font.abeezee_regular);                                                   //font for message
 ```
 
 ```diff
