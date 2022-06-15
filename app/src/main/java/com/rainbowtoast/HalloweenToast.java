@@ -1,10 +1,13 @@
 package com.rainbowtoast;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.core.content.res.ResourcesCompat;
 
 import com.google.android.material.card.MaterialCardView;
 
@@ -20,7 +23,8 @@ public class HalloweenToast {
     public static final int LENGTH_SHORT = 2;
     public static final int LENGTH_LONG = 4;
 
-    public static void showToast(Activity activity, String titleData, String messageData, int duration, String type, String mode) {
+    public static void showToast(Activity activity, String titleData, String messageData, int duration,
+                                 String type, String mode, int titleFont, int messageFont) {
 
         View view = LayoutInflater.from(activity)
                 .inflate(R.layout.halloween_toast_layout, null);
@@ -29,6 +33,12 @@ public class HalloweenToast {
 
         TextView title = view.findViewById(R.id.rainbowTitle);
         TextView message = view.findViewById(R.id.rainbowMessage);
+
+        Typeface fontTitle = ResourcesCompat.getFont(activity, titleFont);
+        Typeface fontMessage = ResourcesCompat.getFont(activity, messageFont);
+
+        title.setTypeface(fontTitle);
+        message.setTypeface(fontMessage);
 
         title.setText(titleData);
         message.setText(messageData);
