@@ -1,18 +1,4 @@
 <resources >
-    <!-- Base application theme. -->
-    <style name="Theme.RainbowToast" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">#9A9A9A</item>
-        <item name="colorPrimaryVariant">#9A9A9A</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">#9A9A9A</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">#9A9A9A</item>
-        <!-- Customize your theme here. -->
-    </style>
 
     <!--lite    -->
     <style name="ht_success_lite_lite_scene" parent="ht_success_lite_scene">

@@ -13,6 +13,12 @@
         android:layout_centerHorizontal="true"
         >
 
+        <ImageView
+            android:id="@+id/halloweenBat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name" />
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:maxLines="@integer/ht_title_message_line_1"
                 android:maxLength="@integer/ht_title_message_length"
-                android:text="@string/success_lite"
+                android:text="@string/ht_success_lite"
                 android:paddingStart="@dimen/ht_title_message_padding_left_10"
                 android:layout_marginEnd="@dimen/ht_message_layout_margin_left_55"
                 android:textColor="@color/ht_default_title_text_color_lite"
@@ -41,12 +47,11 @@
                 android:layout_marginEnd="@dimen/ht_para_message_padding_right_20"
                 android:maxLines="@integer/ht_para_message_line_1"
                 android:maxLength="@integer/ht_para_message_length"
-                android:text="@string/success_message_lite"
+                android:text="@string/ht_success_message_lite"
                 android:textColor="@color/ht_para_text_color_lite"
                 android:textSize="@dimen/ht_para_message_size_10" />
 
         </RelativeLayout>
-
 
     </com.google.android.material.card.MaterialCardView>
 
