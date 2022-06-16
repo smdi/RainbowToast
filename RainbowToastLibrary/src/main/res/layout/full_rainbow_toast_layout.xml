@@ -72,7 +72,7 @@
         app:cardBackgroundColor="@color/fr_card_backgroud_custom_lite"
         app:cardCornerRadius="@dimen/fr_card_corner_radius"
         app:strokeColor="@color/fr_rainbow_card_lite_stroke_lite"
-        app:strokeWidth="@dimen/fr_card_stroke_width">
+        app:strokeWidth="@dimen/fr_card_violet_stroke_width">
 
         <RelativeLayout
             android:layout_width="wrap_content"

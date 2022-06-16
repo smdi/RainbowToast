@@ -24,8 +24,8 @@ public class FullRainbowToast {
     private static int stopAfter = 0;
     private static final int STOP_AFTER2K = 1500;
     private static final int STOP_AFTER4K = 3500;
-    public static final int LENGTH_SHORT = 2;
-    public static final int LENGTH_LONG = 4;
+    public static final int LENGTH_SHORT = 0;
+    public static final int LENGTH_LONG = 1;
 
     public static void showToast(Activity activity, String titleData, String messageData,
                                  int duration, int titleFont, int messageFont) {

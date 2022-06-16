@@ -36,6 +36,7 @@
     <dimen name="fr_card_margin_bottom">-930dp</dimen>
     <dimen name="fr_card_corner_radius">800dp</dimen>
     <dimen name="fr_card_stroke_width">4dp</dimen>
+    <dimen name="fr_card_violet_stroke_width">3dp</dimen>
 
     <!--Card dimensions    -->
     <dimen name="fr_card_width2">1010dp</dimen>

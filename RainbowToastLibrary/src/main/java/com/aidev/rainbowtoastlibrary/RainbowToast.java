@@ -32,8 +32,8 @@ public class RainbowToast {
     public static final String CUSTOM = "CUSTOM";
     public static final String LITE = "LITE";
     public static final String DARK = "DARK";
-    public static final int LENGTH_SHORT = 2;
-    public static final int LENGTH_LONG = 4;
+    public static final int LENGTH_SHORT = 0;
+    public static final int LENGTH_LONG = 1;
 
     public static void showToast(Activity activity, String titleData, String messageData,
                                  int duration, String type, String mode, int titleFont, int messageFont) {

@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 R.font.abeezee_regular, R.font.abeezee_regular));
 
         custom.setOnClickListener(v -> RainbowToast.showToast(mainActivity, "Hint", "Grab the Magic Wand",
-                RainbowToast.LENGTH_LONG, RainbowToast.CUSTOM, RainbowToast.LITE,
+                RainbowToast.LENGTH_SHORT, RainbowToast.CUSTOM, RainbowToast.LITE,
                 R.font.abeezee_regular, R.font.abeezee_regular));
 
         fullRainbow.setOnClickListener(v -> FullRainbowToast.showToast(mainActivity, "Blessed", "Great, You've escaped from witch and won chocolates & candies",
-                FullRainbowToast.LENGTH_LONG, R.font.abeezee_regular, R.font.abeezee_regular));
+                FullRainbowToast.LENGTH_SHORT, R.font.abeezee_regular, R.font.abeezee_regular));
 
     }
 }
