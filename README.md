@@ -7,11 +7,11 @@
 
 ![Rainbow Dashboard (1)](https://user-images.githubusercontent.com/30797411/173832830-917e52d0-bb8b-422a-8bcd-18abc330337a.svg)
 
-### Demo
+### Demo📽
 
 https://user-images.githubusercontent.com/30797411/173833000-20eef63b-44ad-4f8f-8c81-80b0a55d40f1.mp4
 
-### Project Dependency for Rainbow🌈🌦 Toast Library
+### Project Dependency
 
 ```
 allprojects {
@@ -22,7 +22,7 @@ allprojects {
 	}
 ```
 
-### Module Dependency for Rainbow🌈🌦 Toast Library
+### Module Dependency
 
 ```
 dependencies {
@@ -32,7 +32,7 @@ dependencies {
 
 ```
 
-### Implementation for Rainbow🌈🌦 Toast Library
+### Implementation for Rainbow🌈🌦 Toast
 
 ```
 RainbowToast.showToast(mainActivity,                //activity
@@ -62,14 +62,14 @@ RainbowToast.LITE
 RainbowToast.DARK
 ```
 
-### Two✌ dedicated durations
+### Two✌ dedicated durations⏰
 
 ```
 RainbowToast.LENGTH_SHORT       //2 seconds
 RainbowToast.LENGTH_LONG        //4 seconds
 ```
 
-### Implementation for Full Rainbow🌈🌦 Toast Library
+### Implementation for Full Rainbow🌈🌦 Toast
 
 ```
 FullRainbowToast.showToast(mainActivity,                                                        //activity
@@ -84,11 +84,9 @@ FullRainbowToast.showToast(mainActivity,                                        
 - Note: Types & Modes are not supported for FullRainbowToast
 ```
 
-### Two✌ dedicated durations
+### Two✌ dedicated durations⏰
 
 ```
 FullRainbowToast.LENGTH_SHORT       //2 seconds
 FullRainbowToast.LENGTH_LONG        //4 seconds
 ```
-
-
