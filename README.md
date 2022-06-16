@@ -3,8 +3,6 @@
 
 ## Hey there👋, I have designed this beautiful Rainbow🌈🌦 Toast Library for Java & Kotlin
 
-### Rainbow🌈🌦 Toast Library
-
 ![Rainbow Dashboard](https://user-images.githubusercontent.com/30797411/173832748-4ab928f9-54e2-4f0a-9bd2-a77c14ea5b82.svg)
 
 ![Rainbow Dashboard (1)](https://user-images.githubusercontent.com/30797411/173832830-917e52d0-bb8b-422a-8bcd-18abc330337a.svg)
@@ -29,7 +27,7 @@ allprojects {
 ```
 dependencies {
 	        
-          implementation 'com.github.smdi:ToastLibrary:RainbowToast-v0.1.1'
+          implementation 'com.github.smdi:RainbowToast:0.1.1'
 }
 
 ```
