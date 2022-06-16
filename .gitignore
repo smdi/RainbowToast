@@ -1,4 +1,4 @@
-app/src/main/res/font/**
+/app/src/main/res/font/**
 *.iml
 .gradle
 /local.properties
