@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">RainbowToast</string>
-    <string name="success_message_lite">Connection Established Successfully!</string>
-    <string name="success_lite">Success</string>
+    <string name="ht_success_message_lite">Connection Established Successfully!</string>
+    <string name="ht_success_lite">Success</string>
 </resources>

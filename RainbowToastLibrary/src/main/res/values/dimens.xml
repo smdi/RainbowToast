@@ -52,4 +52,5 @@
     <dimen name="fr_card_height5">1040dp</dimen>
 
     <dimen name="fr_other_card_margin_bottom">-945dp</dimen>
+
 </resources>
