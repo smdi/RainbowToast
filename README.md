@@ -84,46 +84,11 @@ FullRainbowToast.showToast(mainActivity,                                        
 - Note: Types & Modes are not supported for FullRainbowToast
 ```
 
-### Halloween Toast Library
-
-![Halloween Dashboard](https://user-images.githubusercontent.com/30797411/173759066-88f9f0ca-2de2-4cad-baa5-699b6ad1e0be.svg)
-
-![Halloween Dashboard](https://user-images.githubusercontent.com/30797411/173585931-c1bc56a5-6927-4b6b-8bce-4fa00200dfcb.svg)
-
-### Demo
-
-https://user-images.githubusercontent.com/30797411/173805516-eaa8e092-352c-4d38-8125-427f8f2aa5d8.mp4
-
-### Project Dependency for Halloween Toast Library
+### Two✌ dedicated durations
 
 ```
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+FullRainbowToast.LENGTH_SHORT       //2 seconds
+FullRainbowToast.LENGTH_LONG        //4 seconds
 ```
 
-### Module Dependency for Halloween Toast Library
 
-```
-dependencies {
-
-	  implementation 'com.github.smdi:ToastLibrary:HalloweenToast-v1.1.1'
-}
-
-```
-
-### Implementation for Halloween Toast Library
-
-```
-HalloweenToast.showToast(mainActivity,                   //activity
-                        "Sunrise",                        //title
-                        "You've survived the demons",      //message
-                        HalloweenToast.LENGTH_LONG,         //duration
-                        HalloweenToast.SUCCESS,              //type
-                        HalloweenToast.LITE,                  //mode
-                        R.font.eater_regular,                  //font for title 
-                        R.font.fontdinerswanky_regular);        //font for message
-```
