@@ -11,7 +11,7 @@
 
 https://user-images.githubusercontent.com/30797411/173833000-20eef63b-44ad-4f8f-8c81-80b0a55d40f1.mp4
 
-### Project Dependency for Rainbow Toast Library
+### Project Dependency for Rainbow🌈🌦 Toast Library
 
 ```
 allprojects {
@@ -22,7 +22,7 @@ allprojects {
 	}
 ```
 
-### Module Dependency for Rainbow Toast Library
+### Module Dependency for Rainbow🌈🌦 Toast Library
 
 ```
 dependencies {
@@ -32,7 +32,7 @@ dependencies {
 
 ```
 
-### Implementation for Rainbow Toast Library
+### Implementation for Rainbow🌈🌦 Toast Library
 
 ```
 RainbowToast.showToast(mainActivity,                //activity
@@ -69,7 +69,7 @@ RainbowToast.LENGTH_SHORT       //2 seconds
 RainbowToast.LENGTH_LONG        //4 seconds
 ```
 
-### Implementation for Full Rainbow Toast Library
+### Implementation for Full Rainbow🌈🌦 Toast Library
 
 ```
 FullRainbowToast.showToast(mainActivity,                                                        //activity
