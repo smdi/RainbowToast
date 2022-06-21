@@ -9,6 +9,8 @@
 
 ### Demo📽
 
+###### [Rainbow toast demo youtube link](https://youtu.be/Q8uRkhdkrQs)
+
 https://user-images.githubusercontent.com/30797411/173833000-20eef63b-44ad-4f8f-8c81-80b0a55d40f1.mp4
 
 ### Project Dependency
