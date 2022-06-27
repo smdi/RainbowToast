@@ -86,7 +86,7 @@ FullRainbowToast.showToast(mainActivity,                                        
                           "Great, You've escaped from witch and won chocolates & candies",     //message
                           FullRainbowToast.LENGTH_LONG,                                         //duration
                           R.font.abeezee_regular,                                                //font for title
-                          R.font.abeezee_regular);                                                //font for message
+                          FullRainbowToast.DEFAULT_FONT);                                         //font for message
 ```
 
 ### Default font
