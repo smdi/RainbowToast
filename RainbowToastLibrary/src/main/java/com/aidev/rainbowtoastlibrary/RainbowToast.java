@@ -34,6 +34,7 @@ public class RainbowToast {
     public static final String DARK = "DARK";
     public static final int LENGTH_SHORT = 0;
     public static final int LENGTH_LONG = 1;
+    public static final int DEFAULT_FONT = 0;
 
     public static void showToast(Activity activity, String titleData, String messageData,
                                  int duration, String type, String mode, int titleFont, int messageFont) {
@@ -46,14 +47,7 @@ public class RainbowToast {
         TextView title = view.findViewById(R.id.rainbowTitle);
         TextView message = view.findViewById(R.id.rainbowMessage);
 
-        Typeface fontTitle = ResourcesCompat.getFont(activity, titleFont);
-        Typeface fontMessage = ResourcesCompat.getFont(activity, messageFont);
-
-        title.setTypeface(fontTitle);
-        message.setTypeface(fontMessage);
-
-        title.setText(titleData);
-        message.setText(messageData);
+        setFontByCheckingDefault(activity, titleFont, messageFont, title, message);
 
         if(duration == LENGTH_LONG){
             stopAfter = STOP_AFTER4K;
@@ -69,6 +63,21 @@ public class RainbowToast {
         toast.setGravity(Gravity.BOTTOM, 0, 0);
         toast.setView(view);
         toast.show();
+    }
+
+    private static void setFontByCheckingDefault(Activity activity, int titleFont, int messageFont, TextView title, TextView message) {
+        if(titleFont != DEFAULT_FONT) setFontForTitle(activity, titleFont, title);
+        if(messageFont != DEFAULT_FONT) setFontForMessage(activity, messageFont, message);
+    }
+
+    private static void setFontForMessage(Activity activity, int messageFont, TextView message) {
+        Typeface fontMessage = ResourcesCompat.getFont(activity, messageFont);
+        message.setTypeface(fontMessage);
+    }
+
+    private static void setFontForTitle(Activity activity, int titleFont, TextView title) {
+        Typeface fontTitle = ResourcesCompat.getFont(activity, titleFont);
+        title.setTypeface(fontTitle);
     }
 
     private static void setColorToCard(MaterialCardView materialCardView, Activity activity, int colorBackground, int colorStroke, TextView title, int titleColor){
