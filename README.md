@@ -29,7 +29,7 @@ allprojects {
 ```
 dependencies {
 	        
-          implementation 'com.github.smdi:RainbowToast:0.1.1'
+          implementation 'com.github.smdi:RainbowToast:0.1.2'
 }
 
 ```
