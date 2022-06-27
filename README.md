@@ -44,7 +44,14 @@ RainbowToast.showToast(mainActivity,                //activity
                         RainbowToast.CUSTOM,            //type
                         RainbowToast.LITE,               //mode
                         R.font.abeezee_regular,           //font for title
-                        R.font.abeezee_regular);           //font for message
+                        RainbowToast.DEFAULT_FONT);        //font for message
+```
+
+### Default font
+```diff
+- If you want you use system default font, pass RainbowToast.DEFAULT_FONT as parameter
+
+RainbowToast.DEFAULT_FONT
 ```
 
 ### Five✋ types
@@ -80,6 +87,14 @@ FullRainbowToast.showToast(mainActivity,                                        
                           FullRainbowToast.LENGTH_LONG,                                         //duration
                           R.font.abeezee_regular,                                                //font for title
                           R.font.abeezee_regular);                                                //font for message
+```
+
+### Default font
+
+```diff
+- If you want you use system default font, pass FullRainbowToast.DEFAULT_FONT as parameter
+
+FullRainbowToast.DEFAULT_FONT
 ```
 
 ```diff
